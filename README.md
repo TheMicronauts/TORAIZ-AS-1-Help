@@ -67,7 +67,7 @@ I usually place this type of pattern at the beginning of the main MIDI track con
 
 Thanks to the Acoustic Feedback function in Cubendo, I also use it to remotely program the patch, without having to navigate through the synth’s interface menus and submenus.
 
-To avoid accidentally losing an important setting, the MIDI messages that directly control the patch are all muted. They must therefore be unmuted in order to modify the synth’s settings.
+To avoid accidentally losing an important setting, the MIDI messages that directly control the patch are initially muted. They must therefore be unmuted in order to modify the synth’s settings.
 
 # Traduction en français
 
