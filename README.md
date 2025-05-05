@@ -21,7 +21,7 @@ I've listed them in this Google Sheets table along with their corresponding cont
 
 https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
 
-You’ll notice that all of this synth’s parameters can be automated using NRPNs (right half of the table), and a good number of them can also be automated using a simple CC (left half of the table).
+All of this synth’s parameters can be automated using NRPNs (right half of the table), and a good number of them can also be automated using a simple CC (left half of the table).
 
 Now, a single CC is quicker to visualise and edit than its NRPN equivalent (which uses a group of four consecutive CCs). Moreover, the CC#s of a specific NRPN can conflict on the MIDI bus with the same CC#s used by other NRPNs, preventing the synth from recalling the intended sound.
 
