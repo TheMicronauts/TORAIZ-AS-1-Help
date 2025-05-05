@@ -1,5 +1,5 @@
 # TORAIZ AS-1 Help (work in progress)
-## Pioneer DJ Dave Smith Instruments TORAIZ AS-1 MIDI cheat sheet &amp; preset packs
+## Pioneer DJ Dave Smith Instruments TORAIZ AS-1 MIDI Cheat Sheet &amp; Preset Packs
 
 The TORAIZ AS-1 is an analog monosynth with full digital control, designed by Dave Smith Instruments (now [Sequential](https://sequential.com/)) for [Pioneer DJ](https://www.pioneerdj.com/). 
 
@@ -13,25 +13,27 @@ It was reviewed by [*Sound On Sound*](https://www.soundonsound.com/reviews/pione
 ![2022-11-07 15 16 13](https://github.com/user-attachments/assets/7d2e4497-e7b0-4cc4-be8c-169a956db544)
 *A classic silver box*
 
-### MIDI cheat sheet
+### MIDI Cheat Sheet
 
 The TORAIZ AS-1 MIDI implementation is comprehensive. All sound parameters can be set and automated directly from the DAW. They are listed in this Google Sheets table along with their corresponding controls and value ranges:
 
 https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
 
-All of this synth’s parameters can be automated via MIDI using NRPNs (right half of the table), and a good number of them can also be automated using a simple CC (left half of the table).
+### Converting NRPNs Into Single CCs
+
+All of the parameters of this synth can be automated via MIDI using NRPNs (right half of the table), and a good number of them can also be automated using a simple CC (left half of the table).
 
 Now, a single CC is quicker to visualise and edit than its NRPN equivalent (which uses a group of four consecutive CCs). Moreover, the CC#s of a specific NRPN can conflict on the MIDI bus with the same CC#s used by other NRPNs, preventing the synth from recalling the intended sound.
 
 Fortunately, when the parameter can be controlled by both methods, it is possible, if needed, to convert NRPNs into simple CCs in the MIDI sequence. Here's how.
 
-A) If the parameter’s value range is ≤ 127 (column L—the conversion is straightforward and doesn’t cause any resolution loss):
+#### A) If the parameter’s value range is ≤ 127 (column L), the conversion is straightforward and doesn’t cause any resolution loss:
 
 1. delete CC#99, 98, and 6
 
 2. convert CC#38 into the CC whose number matches the target parameter (column E)
 
-B) If the parameter’s value range is > 127 (column L—resolution loss is unavoidable):
+#### B) If the parameter’s value range is > 127 (column L), resolution loss is unavoidable:
 
 1. split into two distinct lanes or patterns values ≤ 127 (accessed via NRPN with CC#6 = 0), and values > 127 (accessed via NRPN with CC#6 = 1)
 
@@ -41,18 +43,36 @@ B) If the parameter’s value range is > 127 (column L—resolution loss is unav
 
 4. modify the values sent by the new CCs using the formulas below (where x is the old value and y the new one):
 
-   - When the value range is 0–254 or 0–255 and the target value is ≤ 127 (accessed with CC#6 = 0)
+   - When the value range is 0-254 or 0-255 and the target value is ≤ 127 (accessed with CC#6 = 0)
      
      `y = x / 2`
      
-   - When the value range is 0–254 or 0–255 and the target value is > 127 (accessed with CC#6 = 1)
+   - When the value range is 0-254 or 0-255 and the target value is > 127 (accessed with CC#6 = 1)
      
      `y = (x / 2) + 64`
      
-   - When the value range is 0–164 (LOW-PASS FILTER Cutoff) and the target value is ≤ 127 (accessed with CC#6 = 0)
+   - When the value range is 0-164 (LOW-PASS FILTER Cutoff) and the target value is ≤ 127 (accessed with CC#6 = 0)
      
      `y = x / (165 / 128)` = `x * 0.7812`
      
-   - When the value range is 0–164 (LOW-PASS FILTER Cutoff) and the target value is > 127 (accessed with CC#6 = 1)
+   - When the value range is 0-164 (LOW-PASS FILTER Cutoff) and the target value is > 127 (accessed with CC#6 = 1)
      
      `y = (x * 0.7812) + 100`
+
+### Reset And Control MIDI Part For Cubendo
+
+This XML file is a MIDI Part (pattern) ready to be imported into Cubase or Nuendo (via *File > Import > Track Archive…*). It includes all the MIDI messages that control the TORAIZ AS-1’s sound parameters, with names and comments entered as Text / Score Events. 
+
+I usually place this type of pattern at the beginning of the main MIDI track controlling a synth. Playing it resets the performance parameters and restores the base sound for the song—without needing a SysEx dump. 
+
+Thanks to the Acoustic Feedback function in Cubendo, I also use it to remotely program the patch, without having to navigate through the synth’s interface menus and submenus.
+
+To avoid accidentally losing an important setting, the MIDI messages that directly control the patch are all muted. They must therefore be unmuted in order to modify the synth’s settings.
+
+# Traduction en français
+
+C'est un synthé analogique entièrement à commande numérique
+
+J'ai pour habitude de placer ce genre de pattern au début de la principale piste MIDI pilotant un synthé. La jouer permet de remettre à zéro les paramètres de jeu et de retrouver le son de base pour le morceau considéré. Grâce à la fonction Acoustic Feedback de Cubendo, je m’en sers aussi pour programmer à distance le patch, sans devoir naviguer dans les menus et sous-menus de l’interface du synthé.
+
+Pour ne pas risquer de perdre par inadvertence un réglage important, les messages MIDI pilotant directement le patch sont tous mutés. Ils doivent donc être démutés avant de pouvoir modifier les réglages du synthé.
