@@ -1,5 +1,5 @@
 # TORAIZ AS-1 Help (work in progress)
-## Pioneer DJ Dave Smith Instruments TORAIZ AS-1 MIDI cheat sheet &amp; sound packs
+## Pioneer DJ Dave Smith Instruments TORAIZ AS-1 MIDI cheat sheet &amp; preset packs
 
 The TORAIZ AS-1 is an analog monosynth with full digital control, designed by Dave Smith Instruments (now [Sequential](https://sequential.com/)) for [Pioneer DJ](https://www.pioneerdj.com/). 
 
@@ -15,9 +15,7 @@ It was reviewed by [*Sound On Sound*](https://www.soundonsound.com/reviews/pione
 
 ### MIDI cheat sheet
 
-The TORAIZ AS-1 MIDI implementation is comprehensive. All sound parameters can be set and automated directly from the DAW.
-
-I've listed them in this Google Sheets table along with their corresponding controls and value ranges:
+The TORAIZ AS-1 MIDI implementation is comprehensive. All sound parameters can be set and automated directly from the DAW. They are listed in this Google Sheets table along with their corresponding controls and value ranges:
 
 https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
 
