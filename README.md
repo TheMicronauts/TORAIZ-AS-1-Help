@@ -25,7 +25,7 @@ All of the parameters of this synth can be automated via MIDI using NRPNs (right
 
 Now, a single CC is quicker to visualise and edit than its NRPN equivalent (which uses a group of four consecutive CCs). Moreover, the CC#s of a specific NRPN can conflict on the MIDI bus with the same CC#s used by other NRPNs, preventing the synth from recalling the intended sound.
 
-Fortunately, when the parameter can be controlled by both methods, it is possible, if needed, to convert NRPNs into simple CCs in the MIDI sequence. Here's how.
+Fortunately, when the parameter can be controlled by both methods, it is possible, if needed, to convert NRPNs into simple CCs in the MIDI sequence.
 
 #### A) If the parameter’s value range is ≤ 127 (column L), the conversion is straightforward and doesn’t cause any resolution loss:
 
