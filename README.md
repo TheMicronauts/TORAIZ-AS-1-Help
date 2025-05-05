@@ -1,5 +1,5 @@
-# TORAIZ AS-1 Help (work in progress)
-## Pioneer DJ Dave Smith Instruments TORAIZ AS-1 MIDI Cheat Sheet &amp; Preset Packs
+# Pioneer DJ Dave Smith Instruments TORAIZ AS-1 (work in progress)
+## MIDI Cheat Sheet &amp; Preset Packs
 
 The TORAIZ AS-1 is an analog monosynth with full digital control, designed by Dave Smith Instruments (now [Sequential](https://sequential.com/)) for [Pioneer DJ](https://www.pioneerdj.com/). 
 
@@ -63,7 +63,7 @@ Fortunately, when the parameter can be controlled by both methods, it is possibl
 
 This XML file is a MIDI Part (pattern) ready to be imported into Cubase or Nuendo (via *File > Import > Track Archive…*), which includes all the MIDI messages that control the TORAIZ AS-1’s sound parameters, with names and comments entered as Text / Score Events: 
 
-I usually place this type of pattern at the beginning of the main MIDI track controlling a synth. Playing it resets the performance parameters and restores the base sound for the song—without needing a SysEx dump. 
+I usually place this type of pattern at the beginning of the main MIDI track controlling a synth. Playing it resets the performance parameters and restores the base sound for the song—without needing preset recall or a SysEx dump. 
 
 Thanks to the Acoustic Feedback function in Cubendo’s List Editor, I also use it to remotely program the patch, without having to navigate through the synth’s menus and submenus.
 
