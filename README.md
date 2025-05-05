@@ -65,9 +65,11 @@ This XML file is a MIDI Part (pattern) ready to be imported into Cubase or Nuend
 
 I usually place this type of pattern at the beginning of the main MIDI track controlling a synth. Playing it resets the performance parameters and restores the base sound for the song—without needing a SysEx dump. 
 
-Thanks to the Acoustic Feedback function in Cubendo, I also use it to remotely program the patch, without having to navigate through the synth’s interface menus and submenus.
+Thanks to the Acoustic Feedback function in Cubendo’s List Editor, I also use it to remotely program the patch, without having to navigate through the synth’s interface menus and submenus.
 
 To avoid accidentally losing an important setting, the MIDI messages that directly control the patch are initially muted. They must therefore be unmuted in order to modify the synth’s settings.
+
+<img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />
 
 # Traduction en français
 
