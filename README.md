@@ -21,13 +21,13 @@ https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOY
 
 ### Converting NRPNs Into Single CCs
 
-All of the parameters of this synth can be automated via MIDI using NRPNs (right half of the table), and a good number of them can also be automated using a simple CC (left half of the table).
+All of the parameters of this synth can be automated via MIDI using NRPNs (right half of this table), and a good number of them can also be automated using a simple CC (left half of the table).
 
 Now, a single CC is quicker to visualise and edit than its NRPN equivalent (which uses a group of four consecutive CCs). Moreover, the CC#s of a specific NRPN can conflict on the MIDI bus with the same CC#s used by other NRPNs, preventing the synth from recalling the intended sound.
 
 Fortunately, when the parameter can be controlled by both methods, it is possible, if needed, to convert NRPNs into simple CCs in the MIDI sequence.
 
-#### A) If the parameter’s value range is ≤ 127 (column L), the conversion is straightforward and doesn’t cause any resolution loss:
+#### A) If the parameter’s value range is ≤ 127 (column L of the table), the conversion is straightforward and doesn’t cause any resolution loss:
 
 1. delete CC#99, 98, and 6
 
@@ -35,7 +35,7 @@ Fortunately, when the parameter can be controlled by both methods, it is possibl
 
 #### B) If the parameter’s value range is > 127 (column L), resolution loss is unavoidable:
 
-1. split into two distinct lanes or patterns values ≤ 127 (accessed via NRPN with CC#6 = 0), and values > 127 (accessed via NRPN with CC#6 = 1)
+1. split into two distinct lanes or patterns the values ≤ 127 (accessed via NRPN with CC#6 = 0), and the values > 127 (accessed via NRPN with CC#6 = 1)
 
 2. delete CC#99, 98, and 6
 
