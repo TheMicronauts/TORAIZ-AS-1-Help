@@ -17,7 +17,7 @@ It was reviewed by [*Sound On Sound*](https://www.soundonsound.com/reviews/pione
 
 The TORAIZ AS-1 MIDI implementation is comprehensive. All sound parameters can be set and automated directly from the DAW.
 
-I've listed them in this Google Sheets table along with their value ranges and corresponding controls:
+I've listed them in this Google Sheets table along with their corresponding controls and value ranges:
 
 https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
 
