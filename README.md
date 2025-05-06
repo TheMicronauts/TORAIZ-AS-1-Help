@@ -75,7 +75,7 @@ To avoid accidentally losing an important setting, the MIDI messages that direct
 
 ### Sequential Prophet-6
 
-It seems that the [Prophet-6](https://sequential.com/product/prophet-6/) shares the same MIDI implementation, although I can’t confirm it. If that’s the case, this info, sheets, and MIDI parts could be useful for that synth as well.
+It seems that the [Prophet-6](https://sequential.com/product/prophet-6/) shares the same MIDI implementation, although I can’t confirm it. If that’s the case, these resources could be useful for that synth as well.
 
 # Traduction en français
 
@@ -125,4 +125,4 @@ J'ai pour habitude de placer ce genre de pattern au début de la principale pist
 
 Pour ne pas risquer de perdre par inadvertence un réglage important, les messages MIDI pilotant directement le patch sont tous mutés. Ils doivent donc être démutés avant de pouvoir modifier les réglages du synthé.
 
-Il semblerait que le Prophet-6 partage la même implémentation MIDI, bien que je ne puisse pas le vérifier. Si c'est le cas, ces infos, cette feuille et ces MIDI parts peuvent aussi servir à ce synthé.
+Il semblerait que le Prophet-6 partage la même implémentation MIDI, bien que je ne puisse pas le vérifier. Si c'est le cas, ces ressources peuvent aussi servir à ce synthé.
