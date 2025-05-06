@@ -61,7 +61,7 @@ Fortunately, when the parameter can be controlled by both methods, it is possibl
 
 ### Reset And Control MIDI Part For Cubendo
 
-This XML file is a MIDI Part (pattern) ready to be imported into Cubase or Nuendo (via *File > Import > Track Archive…*), which includes all the MIDI messages that control the TORAIZ AS-1’s sound parameters, with names and comments entered as Text / Score Events: 
+This XML file contains two one-bar MIDI Parts (patterns), ready to be imported into Cubase or Nuendo (via *File > Import > Track Archive…*); they include all the MIDI messages that control the TORAIZ AS-1’s sound parameters, with names and comments entered as Text / Score Events: 
 
 I usually place this type of pattern at the beginning of the main MIDI track controlling a synth. Playing it resets the performance parameters, the synth configuration, and restores the base sound for the song—without needing a SysEx dump. 
 
