@@ -5,6 +5,8 @@ The TORAIZ AS-1 is an analog monosynth with full digital control, designed by Da
 
 The synthesis engine and signal path are entirely analog, except for an optional digital multi FX. In essence, it offers a single voice from the Prophet-6, housed in an enclosure with a form factor reminiscent of a classic silver box.
 
+It was apparently designed for live use, but didn’t really catch on because of [sync](https://gearspace.com/board/electronic-music-instruments-and-electronic-music-production/1244592-pioneer-toraiz-as1-midi-out-issues.html) [issues](https://gearspace.com/board/showpost.php?p=15940161&postcount=1). In the studio, where it can be played and automated as a sound module via the DAW, it’s excellent.
+
 It was reviewed by [*Sound On Sound*](https://www.soundonsound.com/reviews/pioneer-dj-toraiz-1) in November 2017.
 
 ![2017-10-25 17 13 47](https://github.com/user-attachments/assets/67185c02-7175-4bcf-a8d5-be0f94a32024)
@@ -59,7 +61,7 @@ Fortunately, when the parameter can be controlled by both methods, it is possibl
      
      `y = (x * 0.7812) + 100`
 
-### Reset And Control MIDI Part For Cubendo
+### Reset And Control MIDI Parts For Cubendo
 
 This XML file contains two one-bar MIDI Parts (patterns), ready to be imported into Cubase or Nuendo (via *File > Import > Track Archive…*); they include all the MIDI messages that control the TORAIZ AS-1’s sound parameters, with names and comments entered as Text / Score Events: 
 
@@ -74,6 +76,8 @@ To avoid accidentally losing an important setting, the MIDI messages that direct
 # Traduction en français
 
 C'est un synthé analogique entièrement à commande numérique
+
+Apparemment conçu pour le live, il n'a pas rencontré un franc succès en raison de problèmes de synchronisation. En studio où il peut être joué et automatisé en tant que module sonore via le DAW, il est excellent.
 
 Tous les paramètres de ce synthé peuvent être automatisés via MIDI en utilisant des NRPN (moitié droite de ce tableau). Une bonne moitié peut aussi l’être en utilisant un simple CC (moitié gauche du tableau). 
 
