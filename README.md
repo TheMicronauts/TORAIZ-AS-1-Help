@@ -73,6 +73,10 @@ To avoid accidentally losing an important setting, the MIDI messages that direct
 
 <img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />
 
+### Sequential Prophet-6
+
+It seems that the [Prophet-6](https://sequential.com/product/prophet-6/) shares the same MIDI implementation, although I can’t confirm it. If that’s the case, this info, sheets, and MIDI parts could be useful for that synth as well.
+
 # Traduction en français
 
 C'est un synthé analogique entièrement à commande numérique
@@ -120,3 +124,5 @@ y = (x * 0.7812) + 100
 J'ai pour habitude de placer ce genre de pattern au début de la principale piste MIDI pilotant un synthé. La jouer permet de remettre à zéro les paramètres de jeu et de retrouver le son de base pour le morceau considéré. Grâce à la fonction Acoustic Feedback de Cubendo, je m’en sers aussi pour programmer à distance le patch, sans devoir naviguer dans les menus et sous-menus de l’interface du synthé.
 
 Pour ne pas risquer de perdre par inadvertence un réglage important, les messages MIDI pilotant directement le patch sont tous mutés. Ils doivent donc être démutés avant de pouvoir modifier les réglages du synthé.
+
+Il semblerait que le Prophet-6 partage la même implémentation MIDI, bien que je ne puisse pas le vérifier. Si c'est le cas, ces infos, cette feuille et ces MIDI parts peuvent aussi servir à ce synthé.
