@@ -21,6 +21,19 @@ The TORAIZ AS-1 MIDI implementation is comprehensive. All sound parameters can b
 
 https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
 
+### Reset And Control MIDI Parts For Cubendo
+
+This XML file contains two one-bar MIDI Parts (patterns), ready to be imported into Cubase or Nuendo (via *File > Import > Track Archive…*); they include all the MIDI messages that control the TORAIZ AS-1’s sound parameters, with names and comments entered as Text / Score Events: 
+
+I usually place this type of pattern at the beginning of the main MIDI track controlling a synth. Playing it resets the performance parameters, the synth configuration, and restores the base sound for the song—without needing a SysEx dump. 
+
+Thanks to the Acoustic Feedback function in Cubendo’s List Editor, I also use it to remotely program the patch, without having to navigate through the synth’s menus and submenus.
+
+To avoid accidentally losing an important setting, the MIDI messages that directly control the patch are initially muted; they must therefore be unmuted in order to modify the synth’s settings.
+
+<img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />
+*Cubendo’s List Editor (best in class – other DAWs, seriously, just copy this!)*
+
 ### Converting NRPNs Into Single CCs
 
 All of the parameters of this synth can be automated via MIDI using NRPNs (right half of the table), and a good number of them can also be automated using a simple CC (left half of the table).
@@ -29,13 +42,15 @@ Now, a single CC is quicker to visualise and edit than its NRPN equivalent (whic
 
 Fortunately, when the parameter can be controlled by both methods, it is possible, if needed, to convert NRPNs into simple CCs in the MIDI sequence.
 
-#### A) If the parameter’s value range is ≤ 127 (column L of the table), the conversion is straightforward and doesn’t cause any resolution loss:
+#### A) If the parameter’s value range is ≤ 127 (column L of the table):
 
 1. delete CC#99, 98, and 6
 
 2. convert CC#38 into the CC whose number matches the target parameter (column E)
 
-#### B) If the parameter’s value range is > 127 (column L), resolution loss is unavoidable:
+The conversion is straightforward and doesn’t cause any resolution loss.
+
+#### B) If the parameter’s value range is > 127 (column L):
 
 1. split into two distinct lanes or patterns the values ≤ 127 (accessed via NRPN with CC#6 = 0), and the values > 127 (accessed via NRPN with CC#6 = 1)
 
@@ -61,17 +76,7 @@ Fortunately, when the parameter can be controlled by both methods, it is possibl
      
      `y = (x * 0.7812) + 100`
 
-### Reset And Control MIDI Parts For Cubendo
-
-This XML file contains two one-bar MIDI Parts (patterns), ready to be imported into Cubase or Nuendo (via *File > Import > Track Archive…*); they include all the MIDI messages that control the TORAIZ AS-1’s sound parameters, with names and comments entered as Text / Score Events: 
-
-I usually place this type of pattern at the beginning of the main MIDI track controlling a synth. Playing it resets the performance parameters, the synth configuration, and restores the base sound for the song—without needing a SysEx dump. 
-
-Thanks to the Acoustic Feedback function in Cubendo’s List Editor, I also use it to remotely program the patch, without having to navigate through the synth’s menus and submenus.
-
-To avoid accidentally losing an important setting, the MIDI messages that directly control the patch are initially muted; they must therefore be unmuted in order to modify the synth’s settings.
-
-<img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />
+Resolution loss is unavoidable. It will be divided by two when the value range is 0-254 or 0-255, and by 1.2890625 for the Low-Pass Filter Cutoff. 
 
 ### Sequential Prophet-6
 
