@@ -31,8 +31,9 @@ Thanks to the Acoustic Feedback function in Cubendo’s List Editor, I also use 
 
 To avoid accidentally losing an important setting, the MIDI messages that directly control the patch are initially muted; they must therefore be unmuted in order to modify the synth’s settings.
 
-<img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />
-*Cubendo’s List Editor (best in class – other DAWs, seriously, just copy this!)*
+<img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />     
+
+*Cubendo’s List Editor (best in class – other DAWs, seriously, just copy this)*
 
 ### Converting NRPNs Into Single CCs
 
