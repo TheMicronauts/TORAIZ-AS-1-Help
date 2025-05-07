@@ -61,23 +61,23 @@ The conversion is straightforward and doesn’t cause any resolution loss.
 
 4. modify the values sent by the new CCs using the formulas below (where x is the old value and y the new one):
 
-   - When the value range is 0-254 or 0-255 and the target value is ≤ 127 (accessed with CC#6 = 0)
+   - When the value range is 0–254 or 0–255 and the target value is ≤ 127 (accessed with CC#6 = 0)
      
      `y = x / 2`
      
-   - When the value range is 0-254 or 0-255 and the target value is > 127 (accessed with CC#6 = 1)
+   - When the value range is 0–254 or 0–255 and the target value is > 127 (accessed with CC#6 = 1)
      
      `y = (x / 2) + 64`
      
-   - When the value range is 0-164 (LOW-PASS FILTER Cutoff) and the target value is ≤ 127 (accessed with CC#6 = 0)
+   - When the value range is 0–164 (LOW-PASS FILTER Cutoff) and the target value is ≤ 127 (accessed with CC#6 = 0)
      
      `y = x / (165 / 128)` = `x * 0.7812`
      
-   - When the value range is 0-164 (LOW-PASS FILTER Cutoff) and the target value is > 127 (accessed with CC#6 = 1)
+   - When the value range is 0–164 (LOW–PASS FILTER Cutoff) and the target value is > 127 (accessed with CC#6 = 1)
      
      `y = (x * 0.7812) + 100`
 
-Resolution loss is unavoidable. It will be divided by two when the value range is 0-254 or 0-255, and by 1.2890625 for the Low-Pass Filter Cutoff. 
+Some resolution loss is unavoidable: it’s halved when the value range is 0–254 or 0–255, and reduced by a factor of 1.3 for the Low-Pass Filter Cutoff. 
 
 ### Sequential Prophet-6
 
@@ -115,16 +115,16 @@ B) Si la plage de valeurs du paramètre est > 127 (colonne L), la perte de réso
 
 4. modifier les valeurs envoyées par les nouveaux CC en appliquant les formules ci-dessous (où x est l’ancienne valeur et y la nouvelle)
 
-a) quand la plage des valeurs est 0-254 ou 0-255 et que la valeur souhaitée est ≤ 127 (accédées via CC#6 = 0)
+a) quand la plage des valeurs est 0–254 ou 0–255 et que la valeur souhaitée est ≤ 127 (accédées via CC#6 = 0)
 y = x / 2
 
-b) quand la plage des valeurs est 0-254 ou 0-255 et que la valeur souhaitée est > 127 (accédées via CC#6 = 1)
+b) quand la plage des valeurs est 0–254 ou 0–255 et que la valeur souhaitée est > 127 (accédées via CC#6 = 1)
 y = (x / 2) + 64
 
-c) quand la plage des valeurs est 0-164 (LOW-PASS FILTER Cutoff) et que la valeur souhaitée est ≤ 127 (accédées via CC#6 = 0)
+c) quand la plage des valeurs est 0–164 (LOW-PASS FILTER Cutoff) et que la valeur souhaitée est ≤ 127 (accédées via CC#6 = 0)
 y = x / (165 / 128) = x * 0.7812
 
-d) quand la plage des valeurs est 0-164 (LOW-PASS FILTER Cutoff) et que la valeur souhaitée est > 127 (accédées via CC#6 = 1)
+d) quand la plage des valeurs est 0–164 (LOW-PASS FILTER Cutoff) et que la valeur souhaitée est > 127 (accédées via CC#6 = 1)
 y = (x * 0.7812) + 100
 
 J'ai pour habitude de placer ce genre de pattern au début de la principale piste MIDI pilotant un synthé. La jouer permet de remettre à zéro les paramètres de jeu et de retrouver le son de base pour le morceau considéré. Grâce à la fonction Acoustic Feedback de Cubendo, je m’en sers aussi pour programmer à distance le patch, sans devoir naviguer dans les menus et sous-menus de l’interface du synthé.
