@@ -97,7 +97,7 @@ Heureusement, lorsque le paramètre est contrôlable par les deux méthodes, il 
 
 
 
-A) si la plage de valeurs du paramètre est ≤ 127 (colonne L), la conversion est directe et n’entraîne pas de perte de résolution ; il suffit de :
+A) Si la plage de valeurs du paramètre est ≤ 127 (colonne L), la conversion est directe et n’entraîne pas de perte de résolution ; il suffit de :
 
 1. supprimer les CC#99, 98 et 6
 
@@ -105,7 +105,7 @@ A) si la plage de valeurs du paramètre est ≤ 127 (colonne L), la conversion e
 
 
 
-B) si la plage de valeurs du paramètre est > 127 (colonne L), la perte de résolution est inévitable et il faut :
+B) Si la plage de valeurs du paramètre est > 127 (colonne L), la perte de résolution est inévitable et il faut :
 
 1. séparer en deux portées ou deux patterns distincts les valeurs ≤ 127 (accédées en NRPN via CC#6 = 0) et les valeurs > 127 (accédées en NRPN via CC#6 = 1)
 
