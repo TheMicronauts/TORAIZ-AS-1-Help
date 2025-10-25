@@ -85,7 +85,7 @@ It seems that the [Prophet-6](https://sequential.com/product/prophet-6/) shares 
 
 # Traduction en français
 
-C'est un synthé analogique entièrement à commande numérique
+C'est un synthé analogique entièrement à commande numérique. Oui le nom est débile et pourrait être celui celui d’une voiture électrique, mais bon, Pioneer DJ n’a jamais été le temple du bon goût et de la classe.
 
 Apparemment conçu pour le live, il n'a pas rencontré un franc succès en raison de problèmes de synchronisation. En studio où il peut être joué et automatisé en tant que module sonore via le DAW, il est excellent.
 
