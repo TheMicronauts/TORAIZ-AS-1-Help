@@ -5,7 +5,7 @@ The TORAIZ AS-1 is an analog monosynth with full digital control, designed by Da
 
 The synthesis engine and signal path are entirely analog, except for an optional digital multi FX. In essence, it offers a single voice from the Prophet-6, housed in an enclosure with a form factor reminiscent of a classic silver box.
 
-It was apparently designed for live use, but didn’t really catch on because of [sync](https://gearspace.com/board/electronic-music-instruments-and-electronic-music-production/1244592-pioneer-toraiz-as1-midi-out-issues.html) [issues](https://gearspace.com/board/showpost.php?p=15940161&postcount=1). In the studio, where it can be played and automated as a sound module via the DAW, it’s excellent.
+It was apparently designed for live use, but didn’t really catch on because of [sync](https://gearspace.com/board/electronic-music-instruments-and-electronic-music-production/1244592-pioneer-toraiz-as1-midi-out-issues.html) [issues](https://gearspace.com/board/showpost.php?p=15940161&postcount=1). In the studio, where it can be played and automated as a sound module via the DAW, it’s great.
 
 It was reviewed by [*Sound On Sound*](https://www.soundonsound.com/reviews/pioneer-dj-toraiz-1) in November 2017.
 
