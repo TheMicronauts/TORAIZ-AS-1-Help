@@ -1,5 +1,5 @@
 # Pioneer DJ-Dave Smith Instruments TORAIZ AS-1 MIDI Toolkit (work in progress)
-## Introduction
+### Introduction
 The TORAIZ AS-1 is an analog monosynth with full digital control, designed by Dave Smith Instruments (now [Sequential](https://sequential.com/)) for [Pioneer DJ](https://www.pioneerdj.com/). 
 
 The synthesis engine and signal path are entirely analog, except for an optional digital multi FX. In essence, it offers a single voice from the Prophet-6, housed in an enclosure with a form factor reminiscent of a classic silver box (soundwise, it really doesn’t have as much character, but it is much more versatile).
@@ -82,7 +82,7 @@ Some resolution loss is unavoidable: it’s halved when the value range is 0–2
 
 It seems that the [Prophet-6](https://sequential.com/product/prophet-6/) shares the same MIDI implementation, although I can’t confirm it. If that’s the case, these resources could be useful for that synth as well.
 
-# Traduction en français
+## Traduction en français
 
 C'est un synthé analogique entièrement à commande numérique. Oui le nom est débile et pourrait être celui d’une voiture électrique, mais bon, Pioneer DJ n’a jamais été le temple du bon goût et de la classe.
 
