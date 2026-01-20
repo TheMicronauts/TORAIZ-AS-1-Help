@@ -1,5 +1,5 @@
 # Pioneer DJ-Dave Smith Instruments TORAIZ AS-1 MIDI Toolkit (work in progress)
-### Introduction
+## Introduction
 The TORAIZ AS-1 is an analog monosynth with full digital control, designed by Dave Smith Instruments (now [Sequential](https://sequential.com/)) for [Pioneer DJ](https://www.pioneerdj.com/). 
 
 The synthesis engine and signal path are entirely analog, except for an optional digital multi FX. In essence, it offers a single voice from the Prophet-6, housed in an enclosure with a form factor reminiscent of a classic silver box (soundwise, it really doesn’t have as much character, but it is much more versatile).
@@ -14,13 +14,13 @@ It was reviewed by [*Sound On Sound*](https://www.soundonsound.com/reviews/pione
 ![2022-11-07 15 16 13](https://github.com/user-attachments/assets/7d2e4497-e7b0-4cc4-be8c-169a956db544)
 *A classic silver box*
 
-### MIDI Cheat Sheet
+## MIDI Cheat Sheet
 
 The TORAIZ AS-1 MIDI implementation is comprehensive. All sound parameters can be set and automated directly from the DAW. They are listed in this Google Sheets table along with their corresponding controls and value ranges:
 
 https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
 
-### Reset And Control MIDI Parts For Cubendo
+## Reset And Control MIDI Parts For Cubendo
 
 This XML file contains two one-bar MIDI Parts (patterns), ready to be imported into Cubase or Nuendo (via *File > Import > Track Archive…*); it includes all the MIDI messages that control the TORAIZ AS-1’s sound parameters, with names and comments entered as Text / Score Events: 
 
@@ -82,7 +82,7 @@ Some resolution loss is unavoidable: it’s halved when the value range is 0–2
 
 It seems that the [Prophet-6](https://sequential.com/product/prophet-6/) shares the same MIDI implementation, although I can’t confirm it. If that’s the case, these resources could be useful for that synth as well.
 
-## Traduction en français
+# Pioneer DJ-Dave Smith Instruments TORAIZ AS-1 MIDI Toolkit (version française)
 
 C'est un synthé analogique entièrement à commande numérique. Oui le nom est débile et pourrait être celui d’une voiture électrique, mais bon, Pioneer DJ n’a jamais été le temple du bon goût et de la classe.
 
