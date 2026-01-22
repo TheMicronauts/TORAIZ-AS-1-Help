@@ -32,9 +32,9 @@ https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOY
 
 ## Reset And Control MIDI Parts For Cubendo
 
-While playback is stopped, the most direct way to remotely adjust a given state and timbre for a MIDI instrument within Cubase and Nuendo is to enable _Acoustic Feedback_ in the _List Editor_, then simply enter CCs manually and scroll through their values.
+While playback is stopped, the most direct way to remotely adjust a given state and timbre for a MIDI instrument within Cubase and Nuendo is to enable _Acoustic Feedback_ in the _List Editor_, enter CCs manually and scroll through their values.
 
-To this end, I have created a dedicated MIDI pattern (_Part_ in Cubendo-speak) containing every CC used by the AS-1, along with descriptive text (in the form of _Score_ or _Text_ or _SMF Events_… Whatever shifting terminology Steinberg chooses 🤪). 
+To this end, I have created a dedicated MIDI pattern (_Part_ in Cubendo-speak) containing every CC used by the AS-1, along with descriptive text (in the form of _Score_ or _Text Events_… Steinberg chooses 🤪). 
 
 Placed anywhere on a MIDI track, this kind of _Part_ allows for quick adjustments and ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state. Not only does it spare you from menu-diving, but it greatly reduces the need for managing presets, internal memory, Program Changes, or SysEx dumps.
 
