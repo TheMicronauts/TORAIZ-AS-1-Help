@@ -28,7 +28,7 @@ https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOY
 
 - The first table lists all sound parameters alongside their physical controls, the CC and NRPN numbers that control them where applicable, and their range of both real-world and MIDI values.
 
-- The second table, accessible via a tab at the bottom left, provides side-by-side blank patch sheets to be filled in with your own values (after copying or downloading the table). It is designed for quickly noting down settings and comparing patches (a very useful feature when working on sound design or with Klangfarbenmelodie, yet completely overlooked by software developers).
+- The second table, accessible via a tab at the bottom left, provides side-by-side blank patch sheets to be filled in with your own values (after copying or downloading the table). It is designed for quickly noting down settings and comparing patches.
 
 ## Reset And Control MIDI Parts For Cubendo
 
