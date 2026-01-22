@@ -18,7 +18,7 @@ It seems that the [Prophet-6](https://sequential.com/product/prophet-6/) shares 
 _TORAIZ AS-1_
 
 ![2022-11-07 15 16 13](https://github.com/user-attachments/assets/7d2e4497-e7b0-4cc4-be8c-169a956db544)
-_The classic silver box_
+_A classic silver box_
 
 ## MIDI Cheat Sheet
 
