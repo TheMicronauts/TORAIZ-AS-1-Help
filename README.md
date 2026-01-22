@@ -6,7 +6,7 @@ _(version française ci-dessous)_
 
 The TORAIZ AS-1 is an analog monosynth with full digital control, designed by Dave Smith Instruments (now [Sequential](https://sequential.com/)) for [Pioneer DJ](https://www.pioneerdj.com/). 
 
-The synthesis engine and signal path are entirely analog, except for an optional digital multi-FX. In essence, it offers a single voice from the Prophet-6, housed in an enclosure with a form factor reminiscent of a classic silver box (soundwise, it really doesn’t have as much character, but it is much more versatile).
+The synthesis engine and signal path are entirely analog, except for an optional digital multi-FX. In essence, it offers a single voice from the Prophet-6, housed in an enclosure with a form factor reminiscent of a classic silver box (sound-wise, it really doesn’t have as much character, but it is much more versatile).
 
 It was apparently designed for live use, but didn’t really catch on because of [sync](https://gearspace.com/board/electronic-music-instruments-and-electronic-music-production/1244592-pioneer-toraiz-as1-midi-out-issues.html) [issues](https://gearspace.com/board/showpost.php?p=15940161&postcount=1). In the studio, where it can be played and automated as a sound module via MIDI, it’s great.
 
@@ -32,7 +32,7 @@ https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOY
 
 ## Reset And Control MIDI Parts For Cubendo
 
-While playback is stopped, the most direct way to remotely adjust the state and timbre of a MIDI instrument from Cubase and Nuendo is to enable _Acoustic Feedback_ in the _List Editor_, then enter CCs manually and scroll through their values (assuming, of course, that no _Preferences_ interfere with or block this functionality).
+While playback is stopped, the most direct way to remotely adjust the state and timbre of a MIDI instrument from Cubase and Nuendo is to enable _Acoustic Feedback_ in the _List Editor_, then enter CCs manually and scroll through their values (assuming, of course, that no _Preferences_ interfere with this functionality).
 
 Therefore, I have created a dedicated MIDI pattern (_Part_ in Cubendo-speak) containing every CC used by the AS-1, along with descriptive text (in the form of _Score_ or _Text Events_—named differently depending on where you are within the software). 
 
@@ -44,7 +44,7 @@ This XML file allows you to import it into your Cubase or Nuendo Project, along 
 
 - The second _Part_ contains the unit’s _Global_ settings, with default values that I find sensible (those shown in the first table), but which you should tweak to your liking.
 
-- The third _Part_ contains the SysEx message that will trigger the unit to dump the preset currently residing in its working memory. It allows you to record the dump into a MIDI Part and keep it within the project it is related to.
+- The third _Part_ contains the SysEx message that will trigger the unit to dump the patch currently residing in its working memory. It allows you to record the dump into a MIDI _Part_ and keep it within the _Project_ it is related to.
 
 Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic.
 
