@@ -38,7 +38,7 @@ Therefore, I have created a dedicated MIDI pattern (_Part_ in Cubendo-speak) con
 
 Placed anywhere on a MIDI track, this _Part_ allows for quick adjustments and then, on playback, ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state. Not only does it spare you from menu-diving, but it greatly reduces the need for managing presets, internal memory, Program Changes, or SysEx dumps.
 
-This XML file allows you to import it into your Cubase or Nuendo Project, along with two other _Parts_ (via _File > Import > Track Archive…_):
+This XML file allows you to import it into your Cubase or Nuendo _Project_, along with two other _Parts_ (via _File > Import > Track Archive…_):
 
 - The first _Part_ is the one described above and contains the patch settings (_Program_ in DSI-speak). It’s also the one shown below. To avoid accidentally losing important settings, the MIDI messages that directly control the patch are muted; they must, therefore, be unmuted in order to work. On the other hand, CCs that cut the sound, the arpeggiator, or reset performance parameters are left unmuted. This is desirable for the _Part_’s primary use case: being positioned at the start of the timeline. These should probably be muted, however, if the _Part_ is used mid-song.
 
@@ -60,7 +60,7 @@ Now, a single CC is quicker to visualise and edit than its NRPN equivalent (whic
 
 Fortunately, when the parameter can be controlled by both methods, it is possible, if needed, to convert NRPNs into single CCs in the MIDI sequence.
 
-### A) If the parameter’s value range (column L of the table) is ≤ 127:
+### A) If the parameter’s value range (column L of the first table) is ≤ 127:
 
 1. delete CC#99, 98, and 6
 
@@ -68,7 +68,7 @@ Fortunately, when the parameter can be controlled by both methods, it is possibl
 
 The conversion is straightforward and doesn’t cause any resolution loss.
 
-### B) If the parameter’s value range (column L of the table) is > 127:
+### B) If the parameter’s value range (column L of the first table) is > 127:
 
 1. split into two distinct lanes or patterns the values ≤ 127 (accessed via NRPN with CC#6 = 0), and the values > 127 (accessed via NRPN with CC#6 = 1)
 
