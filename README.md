@@ -34,7 +34,7 @@ The second table, accessible via a tab at the bottom left, provides side-by-side
 
 While playback is stopped, the most direct way to remotely adjust a given state and timbre for a MIDI instrument within Cubase and Nuendo is to enable Acoustic Feedback in the List Editor, then simply enter CCs manually and scroll through their values.
 
-To this end, I have created a dedicated MIDI Part containing every CC and NRPN used by the AS-1, along with descriptive text (in the form of Score or Text or SMF Events… Whatever shifting terminology Steinberg chooses 🤪). 
+To this end, I have created a dedicated MIDI Part containing every CC used by the AS-1, along with descriptive text (in the form of Score or Text or SMF Events… Whatever shifting terminology Steinberg chooses 🤪). 
 
 You can import this Part into your Cubase or Nuendo Project using this XML file (via *File > Import > Track Archive…*):
 
