@@ -44,7 +44,7 @@ This XML file allows you to import it (as well as two other _Parts_) into your C
 
 - The second _Part_ contains the unit _Global_ settings, with default values that I find sensible (that’s the ones shown on the first table), but which you can tweak to your liking.
 
-- The third _Part_ contains the SysEx message that will trigger the unit to dump the preset currently residing in its memory.
+- The third _Part_ contains the SysEx message that will trigger the unit to dump the preset currently residing in its working memory.
 
 Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic.
 
