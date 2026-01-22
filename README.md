@@ -38,7 +38,7 @@ To this end, I have created a dedicated MIDI Part containing every CC and NRPN u
 
 Placed anywhere on a MIDI track, this kind of Part allows for quick adjustments and ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state. This obviates the need for managing presets, internal memory, or Program Change commands.
 
-Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic.
+Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic. 🤷‍♂️🤦‍♀️
 
 You can import this Part into your Cubase or Nuendo Project using this XML file (via *File > Import > Track Archive…*):
 
