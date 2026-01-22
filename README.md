@@ -44,11 +44,9 @@ You can import this Part into your Cubase or Nuendo Project using this XML file 
 
 
 
-It contains two one-bar MIDI Parts (patterns): 
+It contains two one-bar MIDI Parts (patterns)
 
-without having to navigate through the synth’s menus and submenus.
-
-To avoid accidentally losing an important setting, the MIDI messages that directly control the patch are initially muted; they must therefore be unmuted in order to modify the synth’s settings.
+To avoid accidentally losing important settings, the MIDI messages that directly control the patch are initially muted; they must therefore be unmuted in order to work.
 
 <img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />     
 
