@@ -36,15 +36,15 @@ While playback is stopped, the most direct way to remotely adjust a given state 
 
 To this end, I have created a dedicated MIDI Part containing every CC used by the AS-1, along with descriptive text (in the form of Score or Text or SMF Events… Whatever shifting terminology Steinberg chooses 🤪). 
 
+Placed anywhere on a MIDI track, this kind of Part allows for quick adjustments and ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state. Not only does it spare you from menu-diving, but it greatly reduces the need for managing presets, internal memory, Program Changes, or SysEx dumps.
+
+Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic. 🤷‍♂️🤦‍♀️
+
 You can import this Part into your Cubase or Nuendo Project using this XML file (via *File > Import > Track Archive…*):
 
 It contains two one-bar MIDI Parts (patterns)
 
 To avoid accidentally losing important settings, the MIDI messages that directly control the patch are initially muted; they must therefore be unmuted in order to work. On the other hand, CCs that stop the sound and the arpeggiator, or reset performance parameters are left unmuted—which is desirable for the Part’s primary use case: being positioned at the start of the timeline. These should probably be muted, however, if the Part is used mid-song.
-
-Placed anywhere on a MIDI track, this kind of Part allows for quick adjustments and ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state. Not only does it spare you from menu-diving, but it greatly reduces the need for managing presets, internal memory, Program Changes, or SysEx dumps.
-
-Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic. 🤷‍♂️🤦‍♀️
 
 <img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />     
 
