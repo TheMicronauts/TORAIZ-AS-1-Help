@@ -32,7 +32,19 @@ The second table, accessible via a tab at the bottom left, provides side-by-side
 
 ## Reset And Control MIDI Parts For Cubendo
 
-This XML file contains two one-bar MIDI Parts (patterns), ready to be imported into Cubase or Nuendo (via *File > Import > Track Archive…*); it includes all the MIDI messages that control the TORAIZ AS-1’s sound parameters, with names and comments entered as Text / Score Events: 
+The most direct way to remotely adjust the initial state and timbre of a MIDI instrument within Cubendo is to enable Acoustic Feedback in the List Editor, then simply enter CCs manually and scroll through their values.
+
+To this end, I have created a dedicated MIDI Part containing every CC and NRPN used by the AS-1, along with descriptive text (in the form of Score or Text or SMF Events… Whatever shifting terminology Steinberg chooses 🤪). 
+
+Placed anywhere on a MIDI track, this kind of Part enables the synth to recall its settings at that specific moment in time—for instance, at the start of a song to restore its initial state. This obviates the need for managing presets, internal memory, or Program Change commands.
+
+Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic 🤷‍♂️🤦‍♀️
+
+You can import this Part into your Cubase or Nuendo Project using this XML file (via *File > Import > Track Archive…*):
+
+
+
+It contains two one-bar MIDI Parts (patterns), ready to be imported into Cubase or Nuendo (via *File > Import > Track Archive…*); it includes all the MIDI messages that control the TORAIZ AS-1’s sound parameters, with names and comments entered as Text / Score Events: 
 
 I usually place this type of pattern at the beginning of the main MIDI track controlling a synth. Playing it resets the performance parameters, the synth configuration, and restores the base sound for the song—without needing a SysEx dump. 
 
