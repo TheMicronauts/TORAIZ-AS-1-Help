@@ -76,7 +76,7 @@ The conversion is straightforward and doesn’t cause any resolution loss.
 
 3. convert CC#38 into the CC whose number matches the target parameter (see column E)
 
-4. modify the values sent by the new CCs using the formulas below (where x is the old value and y the new one):
+4. modify the values set for the new CC using the formulas below (where x is the old value and y the new one):
 
    - When the value range is 0–254 or 0–255 and the target value is ≤ 127 (accessed with CC#6 = 0)
      
