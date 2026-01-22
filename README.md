@@ -36,15 +36,15 @@ While playback is stopped, the most direct way to remotely adjust the state and 
 
 Therefore, I have created a dedicated MIDI pattern (_Part_ in Cubendo-speak) containing every CC used by the AS-1, along with descriptive text (in the form of _Score_ or _Text Events_—named differently depending on where you are within the software 🤪). 
 
-Placed anywhere on a MIDI track, it allows for quick adjustments and then ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state. Not only does it spare you from menu-diving, but it greatly reduces the need for managing presets, internal memory, Program Changes, or SysEx dumps.
+Placed anywhere on a MIDI track, this _Part_ allows for quick adjustments and then ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state. Not only does it spare you from menu-diving, but it greatly reduces the need for managing presets, internal memory, Program Changes, or SysEx dumps.
 
 This XML file allows you to import it into your Cubase or Nuendo Project, along with two other _Parts_ (via _File > Import > Track Archive…_):
 
-- The first _Part_ is the one described above and so contains the patch settings (_Program_ in DSI-speak). It’s also the one shown below. To avoid accidentally losing important settings, the MIDI messages that directly control the patch are muted; they must therefore be unmuted in order to work. On the other hand, CCs that stop the sound and the arpeggiator, or reset performance parameters are left unmuted. This is desirable for the _Part_’s primary use case: being positioned at the start of the timeline. These should probably be muted, however, if the _Part_ is used mid-song.
+- The first _Part_ is the one described above and contains the patch settings (_Program_ in DSI-speak). It’s also the one shown below. To avoid accidentally losing important settings, the MIDI messages that directly control the patch are muted; they must, therefore, be unmuted in order to work. On the other hand, CCs that cut the sound, the arpeggiator, or reset performance parameters are left unmuted. This is desirable for the _Part_’s primary use case: being positioned at the start of the timeline. These should probably be muted, however, if the _Part_ is used mid-song.
 
-- The second _Part_ contains the unit _Global_ settings, with default values that I find sensible (that’s the ones shown on the first table), but which you can tweak to your liking.
+- The second _Part_ contains the unit _Global_ settings, with default values that I find sensible (those shown in the first table), but which you should tweak to your liking.
 
-- The third _Part_ contains the SysEx message that will trigger the unit to dump the preset currently residing in its working memory.
+- The third _Part_ contains the SysEx message that will trigger the unit to dump the preset currently residing in its working memory. It allows you to record the dump into a MIDI Part and keep it within the project it is related to.
 
 Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic.
 
