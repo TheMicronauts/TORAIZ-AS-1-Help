@@ -32,7 +32,7 @@ The second table, accessible via a tab at the bottom left, provides side-by-side
 
 ## Reset And Control MIDI Parts For Cubendo
 
-The most direct way to remotely adjust the initial state and timbre of a MIDI instrument within Cubendo is to enable Acoustic Feedback in the List Editor, then simply enter CCs manually and scroll through their values.
+The most direct way to remotely adjust the initial state and timbre of a MIDI instrument within Cubase and Nuendo is to enable Acoustic Feedback in the List Editor, then simply enter CCs manually and scroll through their values.
 
 To this end, I have created a dedicated MIDI Part containing every CC and NRPN used by the AS-1, along with descriptive text (in the form of Score or Text or SMF Events… Whatever shifting terminology Steinberg chooses 🤪). 
 
