@@ -60,7 +60,7 @@ Now, a single CC is quicker to visualise and edit than its NRPN equivalent (whic
 
 Fortunately, when the parameter can be controlled by both methods, it is possible—if needed—to convert NRPNs into single CCs within the MIDI sequence, using Cubendo’s various functionalities, including the _Logical Editor_.
 
-### A) If the parameter’s value range (column L of the first table) is ≤ 127:
+### If the parameter’s value range (column L of the first table) is ≤ 127:
 
 1. delete CC#99, 98, and 6
 
@@ -68,7 +68,7 @@ Fortunately, when the parameter can be controlled by both methods, it is possibl
 
 The conversion is straightforward and doesn’t cause any resolution loss.
 
-### B) If the parameter’s value range (column L of the first table) is > 127:
+### If the parameter’s value range (column L of the first table) is > 127:
 
 1. split into two distinct lanes or patterns the values ≤ 127 (accessed via NRPN with CC#6 = 0), and the values > 127 (accessed via NRPN with CC#6 = 1)
 
