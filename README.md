@@ -36,7 +36,7 @@ The most direct way to remotely adjust the initial state and timbre of a MIDI in
 
 To this end, I have created a dedicated MIDI Part containing every CC and NRPN used by the AS-1, along with descriptive text (in the form of Score or Text or SMF Events… Whatever shifting terminology Steinberg chooses 🤪). 
 
-Placed anywhere on a MIDI track, this kind of Part allows for quick adjustments and ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state. This obviates the need for managing presets, internal memory, or Program Change commands.
+Placed anywhere on a MIDI track, this kind of Part allows for quick adjustments and ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state. Not only does it spare you from menu-diving, but it completely obviates the need for managing presets, internal memory, Program Changes, or SysEx dumps.
 
 Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic. 🤷‍♂️🤦‍♀️
 
@@ -44,11 +44,9 @@ You can import this Part into your Cubase or Nuendo Project using this XML file 
 
 
 
-It contains two one-bar MIDI Parts (patterns), ready to be imported into Cubase or Nuendo (via *File > Import > Track Archive…*); it includes all the MIDI messages that control the TORAIZ AS-1’s sound parameters, with names and comments entered as Text / Score Events: 
+It contains two one-bar MIDI Parts (patterns): 
 
-I usually place this type of pattern at the beginning of the main MIDI track controlling a synth. Playing it resets the performance parameters, the synth configuration, and restores the base sound for the song—without needing a SysEx dump. 
-
-Thanks to the Acoustic Feedback function in Cubendo’s List Editor, I also use it to remotely program the patch, without having to navigate through the synth’s menus and submenus.
+without having to navigate through the synth’s menus and submenus.
 
 To avoid accidentally losing an important setting, the MIDI messages that directly control the patch are initially muted; they must therefore be unmuted in order to modify the synth’s settings.
 
