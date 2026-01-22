@@ -22,7 +22,7 @@ _The classic silver box_
 
 ## MIDI Cheat Sheet
 
-The TORAIZ AS-1’s MIDI implementation is great. It is no coincidence, as Dave Smith was among the small group of genius electronic luthiers who established the MIDI standard. All sound parameters can be set and automated directly from the DAW using MIDI CCs. They are listed in this Google Sheets document along with their corresponding controls and value ranges:
+The TORAIZ AS-1’s MIDI implementation is great. It is no coincidence, as Dave Smith was among the small group of genius electronic luthiers who established the MIDI standard. All sound parameters can be set and automated directly from the DAW using MIDI 1.0 messages. They are listed in this Google Sheets document along with their corresponding controls and value ranges:
 
 https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
 
@@ -44,7 +44,7 @@ This XML file allows you to import it into your Cubase or Nuendo Project, along 
 
 - The second _Part_ contains the unit’s _Global_ settings, with default values that I find sensible (those shown in the first table), but which you should tweak to your liking.
 
-- The third _Part_ contains the SysEx message that will trigger the unit to dump the patch currently residing in its working memory. It allows you to record the dump into a MIDI _Part_ and keep it within the _Project_ it is related to.
+- The third _Part_ contains the SysEx message that will trigger the unit to dump the patch currently residing in its working memory. It allows you to record the dump (also a SysEx message) into a MIDI _Part_ and keep it within the _Project_ it is related to.
 
 Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic.
 
@@ -52,15 +52,15 @@ Once you have established a mental model of the instrument, this workflow is far
 
 _Cubendo’s List Editor (best in class – other DAWs, seriously, take note, copy it, improve it if you can)_
 
-### Converting NRPNs Into Single CCs
+## Converting NRPNs Into Single CCs
 
-All of the parameters of this synth can be automated via MIDI using NRPNs (right half of the table), and a good number of them can also be automated using a simple CC (left half of the table).
+As we’ve just seen, all parameters of this synth can be automated via MIDI using NRPNs (right half of the first table), and a good number of them can also be automated using single CCs (left half of the first table).
 
-Now, a single CC is quicker to visualise and edit than its NRPN equivalent (which uses a group of four consecutive CCs). Moreover, the CC#s of a specific NRPN can conflict on the MIDI bus with the same CC#s used by other NRPNs, preventing the synth from recalling the intended sound.
+Now, a single CC is quicker to visualise and edit than its NRPN equivalent (which uses a group of four consecutive CCs). Moreover, the CC#s constituting a specific NRPN can conflict on the MIDI stream with the same CC#s used by other NRPNs, preventing the synth from recalling the intended sound.
 
-Fortunately, when the parameter can be controlled by both methods, it is possible, if needed, to convert NRPNs into simple CCs in the MIDI sequence.
+Fortunately, when the parameter can be controlled by both methods, it is possible, if needed, to convert NRPNs into single CCs in the MIDI sequence.
 
-#### A) If the parameter’s value range is ≤ 127 (column L of the table):
+### A) If the parameter’s value range is ≤ 127 (column L of the table):
 
 1. delete CC#99, 98, and 6
 
@@ -68,7 +68,7 @@ Fortunately, when the parameter can be controlled by both methods, it is possibl
 
 The conversion is straightforward and doesn’t cause any resolution loss.
 
-#### B) If the parameter’s value range is > 127 (column L):
+### B) If the parameter’s value range is > 127 (column L):
 
 1. split into two distinct lanes or patterns the values ≤ 127 (accessed via NRPN with CC#6 = 0), and the values > 127 (accessed via NRPN with CC#6 = 1)
 
@@ -88,11 +88,11 @@ The conversion is straightforward and doesn’t cause any resolution loss.
      
    - When the value range is 0–164 (LOW-PASS FILTER Cutoff) and the target value is ≤ 127 (accessed with CC#6 = 0)
      
-     `y = x / (165 / 128)` = `x * 0.7812`
+     `y = x / (165 / 128)` = `x * (128 / 165)`
      
    - When the value range is 0–164 (LOW–PASS FILTER Cutoff) and the target value is > 127 (accessed with CC#6 = 1)
      
-     `y = (x * 0.7812) + 100`
+     `y = (x * (128 / 165)) + 100`
 
 Some resolution loss is unavoidable: it’s halved when the value range is 0–254 or 0–255, and reduced by a factor of 1.3 for the Low-Pass Filter Cutoff. 
 
