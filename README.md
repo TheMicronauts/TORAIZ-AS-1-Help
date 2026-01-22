@@ -34,17 +34,15 @@ https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOY
 
 While playback is stopped, the most direct way to remotely adjust the state and timbre of a MIDI instrument within Cubase and Nuendo is to enable _Acoustic Feedback_ in the _List Editor_, then enter CCs manually and scroll through their values.
 
-Therefore, I have created a dedicated MIDI pattern (_Part_ in Cubendo-speak) containing every CC used by the AS-1, along with descriptive text (in the form of _Score_ or _Text Events_). 
-
-Placed anywhere on a MIDI track, this kind of _Part_ allows for quick adjustments and then ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state. Not only does it spare you from menu-diving, but it greatly reduces the need for managing presets, internal memory, Program Changes, or SysEx dumps.
+Therefore, I have created a dedicated MIDI pattern (_Part_ in Cubendo-speak) containing every CC used by the AS-1, along with descriptive text (in the form of _Score_ or _Text Events_). Placed anywhere on a MIDI track, it allows for quick adjustments and then ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state. Not only does it spare you from menu-diving, but it greatly reduces the need for managing presets, internal memory, Program Changes, or SysEx dumps.
 
 Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic.
 
-You can import this into your Cubase or Nuendo Project using this XML file (via _File > Import > Track Archive…_):
+This XML file allows you to import two such _Parts_ into your Cubase or Nuendo Project (via _File > Import > Track Archive…_):
 
-- The first _Part_ contains the Patch settings. It’s the one shown below. To avoid accidentally losing important settings, the MIDI messages that directly control the patch are initially muted; they must therefore be unmuted in order to work. On the other hand, CCs that stop the sound and the arpeggiator, or reset performance parameters are left unmuted—which is desirable for the _Part_’s primary use case: being positioned at the start of the timeline. These should probably be muted, however, if the _Part_ is used mid-song.
+- The first _Part_ contains the patch settings (_Program_ in DSI-speak). It’s the one shown below. To avoid accidentally losing important settings, the MIDI messages that directly control the patch are muted; they must therefore be unmuted in order to work. On the other hand, CCs that stop the sound and the arpeggiator, or reset performance parameters are left unmuted—which is desirable for the _Part_’s primary use case: being positioned at the start of the timeline. These should probably be muted, however, if the _Part_ is used mid-song.
 
-- The second _Part_ contains the _Global_ settings, with default values that I find sensible, but which you can tweak to your liking.
+- The second _Part_ contains the unit _Global_ settings, with default values that I find sensible (also shown on the first table), but which you can tweak to your liking.
 
 <img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />     
 
