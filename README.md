@@ -32,19 +32,21 @@ https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOY
 
 ## Reset And Control MIDI Parts For Cubendo
 
-While playback is stopped, the most direct way to remotely adjust the state and timbre of a MIDI instrument within Cubase and Nuendo is to enable _Acoustic Feedback_ in the _List Editor_, then enter CCs manually and scroll through their values.
+While playback is stopped, the most direct way to remotely adjust the state and timbre of a MIDI instrument from Cubase and Nuendo is to enable _Acoustic Feedback_ in the _List Editor_, then enter CCs manually and scroll through their values.
 
-Therefore, I have created a dedicated MIDI pattern (_Part_ in Cubendo-speak) containing every CC used by the AS-1, along with descriptive text (in the form of _Score_ or _Text Events_—they are named differently in different locations within the software 🤪). 
+Therefore, I have created a dedicated MIDI pattern (_Part_ in Cubendo-speak) containing every CC used by the AS-1, along with descriptive text (in the form of _Score_ or _Text Events_—named differently depending on where you are within the software 🤪). 
 
 Placed anywhere on a MIDI track, it allows for quick adjustments and then ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state. Not only does it spare you from menu-diving, but it greatly reduces the need for managing presets, internal memory, Program Changes, or SysEx dumps.
 
-Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic.
+This XML file allows you to import it (as well as two other _Parts_) into your Cubase or Nuendo Project (via _File > Import > Track Archive…_):
 
-This XML file allows you to import two such _Parts_ into your Cubase or Nuendo Project (via _File > Import > Track Archive…_):
-
-- The first _Part_ contains the patch settings (_Program_ in DSI-speak). It’s the one shown below. To avoid accidentally losing important settings, the MIDI messages that directly control the patch are muted; they must therefore be unmuted in order to work. On the other hand, CCs that stop the sound and the arpeggiator, or reset performance parameters are left unmuted—which is desirable for the _Part_’s primary use case: being positioned at the start of the timeline. These should probably be muted, however, if the _Part_ is used mid-song.
+- The first _Part_ is the one described above and so contains the preset settings (_Program_ in DSI-speak). It’s also the one shown below. To avoid accidentally losing important settings, the MIDI messages that directly control the patch are muted; they must therefore be unmuted in order to work. On the other hand, CCs that stop the sound and the arpeggiator, or reset performance parameters are left unmuted—which is desirable for the _Part_’s primary use case: being positioned at the start of the timeline. These should probably be muted, however, if the _Part_ is used mid-song.
 
 - The second _Part_ contains the unit _Global_ settings, with default values that I find sensible (that’s the ones shown on the first table), but which you can tweak to your liking.
+
+- The third _Part_ contains the SysEx message that will trigger the unit to dump the preset currently residing in its memory.
+
+Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic.
 
 <img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />     
 
