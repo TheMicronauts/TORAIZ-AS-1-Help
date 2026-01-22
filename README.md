@@ -22,13 +22,13 @@ _The classic silver box_
 
 ## MIDI Cheat Sheet
 
-The TORAIZ AS-1 MIDI implementation is comprehensive. It is no coincidence that Dave Smith was among the small group of genius electronic luthiers who established the MIDI standard. All sound parameters can be set and automated directly from the DAW using MIDI CCs. They are listed in this Google Sheets table along with their corresponding controls and value ranges:
+The TORAIZ AS-1’s MIDI implementation is comprehensive. It is no coincidence, as Dave Smith was among the small group of genius electronic luthiers who established the MIDI standard. All sound parameters can be set and automated directly from the DAW using MIDI CCs. They are listed in this Google Sheets document along with their corresponding controls and value ranges:
 
 https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
 
-- The first table lists all sound parameters alongside their physical controls, the CC and NRPN numbers that control them where applicable, and their range of both real-world and MIDI values.
+- The first table lists all sound parameters alongside their physical controls, the CC and NRPN numbers that control them, and their range of both real-world and MIDI values.
 
-- The second table, accessible via a tab at the bottom left, provides side-by-side blank patch sheets to be filled in with your own values (after copying or downloading the table). It is designed for quickly noting down settings and comparing patches.
+- The second table, accessible via a tab at the bottom left, provides side-by-side blank patch sheets to be filled in with your own values (after copying or downloading the spreadsheet). It is designed for quickly noting down settings and comparing patches.
 
 ## Reset And Control MIDI Parts For Cubendo
 
