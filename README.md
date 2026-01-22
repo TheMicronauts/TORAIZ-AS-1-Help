@@ -44,7 +44,7 @@ This XML file allows you to import two such _Parts_ into your Cubase or Nuendo P
 
 - The first _Part_ contains the patch settings (_Program_ in DSI-speak). It’s the one shown below. To avoid accidentally losing important settings, the MIDI messages that directly control the patch are muted; they must therefore be unmuted in order to work. On the other hand, CCs that stop the sound and the arpeggiator, or reset performance parameters are left unmuted—which is desirable for the _Part_’s primary use case: being positioned at the start of the timeline. These should probably be muted, however, if the _Part_ is used mid-song.
 
-- The second _Part_ contains the unit _Global_ settings, with default values that I find sensible (that’s the one shown on the first table), but which you can tweak to your liking.
+- The second _Part_ contains the unit _Global_ settings, with default values that I find sensible (that’s the ones shown on the first table), but which you can tweak to your liking.
 
 <img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />     
 
