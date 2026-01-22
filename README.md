@@ -42,7 +42,7 @@ This XML file allows you to import it into your Cubase or Nuendo Project, along 
 
 - The first _Part_ is the one described above and contains the patch settings (_Program_ in DSI-speak). It’s also the one shown below. To avoid accidentally losing important settings, the MIDI messages that directly control the patch are muted; they must, therefore, be unmuted in order to work. On the other hand, CCs that cut the sound, the arpeggiator, or reset performance parameters are left unmuted. This is desirable for the _Part_’s primary use case: being positioned at the start of the timeline. These should probably be muted, however, if the _Part_ is used mid-song.
 
-- The second _Part_ contains the unit _Global_ settings, with default values that I find sensible (those shown in the first table), but which you should tweak to your liking.
+- The second _Part_ contains the unit’s _Global_ settings, with default values that I find sensible (those shown in the first table), but which you should tweak to your liking.
 
 - The third _Part_ contains the SysEx message that will trigger the unit to dump the preset currently residing in its working memory. It allows you to record the dump into a MIDI Part and keep it within the project it is related to.
 
