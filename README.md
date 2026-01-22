@@ -1,7 +1,8 @@
 # Work in progress: Pioneer DJ-Dave Smith Instruments TORAIZ AS-1 MIDI Toolkit
-## Introduction
 
 _(version française ci-dessous)_
+
+## Introduction
 
 The TORAIZ AS-1 is an analog monosynth with full digital control, designed by Dave Smith Instruments (now [Sequential](https://sequential.com/)) for [Pioneer DJ](https://www.pioneerdj.com/). 
 
@@ -17,13 +18,17 @@ It seems that the [Prophet-6](https://sequential.com/product/prophet-6/) shares 
 *TORAIZ AS-1*
 
 ![2022-11-07 15 16 13](https://github.com/user-attachments/assets/7d2e4497-e7b0-4cc4-be8c-169a956db544)
-*A classic silver box*
+*The classic silver box*
 
 ## MIDI Cheat Sheet
 
 The TORAIZ AS-1 MIDI implementation is comprehensive. It is no coincidence that Dave Smith was among the small group of genius electronic luthiers who established the MIDI standard. All sound parameters can be set and automated directly from the DAW using MIDI CCs. They are listed in this Google Sheets table along with their corresponding controls and value ranges:
 
 https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
+
+The first table lists all sound parameters alongside their physical controls, the CC and NRPN numbers that control them where applicable, and their range of both real-world and MIDI values.
+
+The second table, accessible via a tab at the bottom left, provides side-by-side blank patch sheets to be filled in with your own values (after copying or downloading the table). It is designed for quickly noting down settings and comparing patches (a very useful feature when working on sound design or with Klangfarbenmelodie, yet completely overlooked by software developers).
 
 ## Reset And Control MIDI Parts For Cubendo
 
