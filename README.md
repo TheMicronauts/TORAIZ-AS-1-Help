@@ -15,10 +15,10 @@ It was reviewed by [*Sound On Sound*](https://www.soundonsound.com/reviews/pione
 It seems that the [Prophet-6](https://sequential.com/product/prophet-6/) shares the same MIDI implementation, although I can’t confirm. If that’s the case, these resources could be useful for that synth as well.
 
 ![2017-10-25 17 13 47](https://github.com/user-attachments/assets/67185c02-7175-4bcf-a8d5-be0f94a32024)
-*TORAIZ AS-1*
+_TORAIZ AS-1_
 
 ![2022-11-07 15 16 13](https://github.com/user-attachments/assets/7d2e4497-e7b0-4cc4-be8c-169a956db544)
-*The classic silver box*
+_The classic silver box_
 
 ## MIDI Cheat Sheet
 
@@ -32,23 +32,23 @@ https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOY
 
 ## Reset And Control MIDI Parts For Cubendo
 
-While playback is stopped, the most direct way to remotely adjust a given state and timbre for a MIDI instrument within Cubase and Nuendo is to enable Acoustic Feedback in the List Editor, then simply enter CCs manually and scroll through their values.
+While playback is stopped, the most direct way to remotely adjust a given state and timbre for a MIDI instrument within Cubase and Nuendo is to enable _Acoustic Feedback_ in the _List Editor_, then simply enter CCs manually and scroll through their values.
 
-To this end, I have created a dedicated MIDI Part containing every CC used by the AS-1, along with descriptive text (in the form of Score or Text or SMF Events… Whatever shifting terminology Steinberg chooses 🤪). 
+To this end, I have created a dedicated MIDI pattern (_Part_ in Cubendo-speak) containing every CC used by the AS-1, along with descriptive text (in the form of _Score_ or _Text_ or _SMF Events_… Whatever shifting terminology Steinberg chooses 🤪). 
 
-Placed anywhere on a MIDI track, this kind of Part allows for quick adjustments and ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state. Not only does it spare you from menu-diving, but it greatly reduces the need for managing presets, internal memory, Program Changes, or SysEx dumps.
+Placed anywhere on a MIDI track, this kind of _Part_ allows for quick adjustments and ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state. Not only does it spare you from menu-diving, but it greatly reduces the need for managing presets, internal memory, Program Changes, or SysEx dumps.
 
 Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic. 🤷‍♂️🤦‍♀️
 
-You can import this Part into your Cubase or Nuendo Project using this XML file (via *File > Import > Track Archive…*):
+You can import this _Part_ into your Cubase or Nuendo Project using this XML file (via _File > Import > Track Archive…_):
 
-It contains two one-bar MIDI Parts (patterns)
+It contains two one-bar MIDI _Parts_
 
-To avoid accidentally losing important settings, the MIDI messages that directly control the patch are initially muted; they must therefore be unmuted in order to work. On the other hand, CCs that stop the sound and the arpeggiator, or reset performance parameters are left unmuted—which is desirable for the Part’s primary use case: being positioned at the start of the timeline. These should probably be muted, however, if the Part is used mid-song.
+To avoid accidentally losing important settings, the MIDI messages that directly control the patch are initially muted; they must therefore be unmuted in order to work. On the other hand, CCs that stop the sound and the arpeggiator, or reset performance parameters are left unmuted—which is desirable for the _Part_’s primary use case: being positioned at the start of the timeline. These should probably be muted, however, if the _Part_ is used mid-song.
 
 <img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />     
 
-*Cubendo’s List Editor (best in class – other DAWs, seriously, take note, copy it, improve it if you can)*
+_Cubendo’s List Editor (best in class – other DAWs, seriously, take note, copy it, improve it if you can)_
 
 ### Converting NRPNs Into Single CCs
 
