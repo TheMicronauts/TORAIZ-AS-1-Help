@@ -21,7 +21,7 @@ It seems that the [Prophet-6](https://sequential.com/product/prophet-6/) shares 
 
 ## MIDI Cheat Sheet
 
-The TORAIZ AS-1 MIDI implementation is comprehensive. All sound parameters can be set and automated directly from the DAW using MIDI CCs. They are listed in this Google Sheets table along with their corresponding controls and value ranges:
+The TORAIZ AS-1 MIDI implementation is comprehensive. It is no coincidence that Dave Smith was among the small group of genius electronic luthiers who established the MIDI standard. All sound parameters can be set and automated directly from the DAW using MIDI CCs. They are listed in this Google Sheets table along with their corresponding controls and value ranges:
 
 https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
 
