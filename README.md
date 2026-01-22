@@ -60,7 +60,7 @@ Now, a single CC is quicker to visualise and edit than its NRPN equivalent (whic
 
 Fortunately, when the parameter can be controlled by both methods, it is possible, if needed, to convert NRPNs into single CCs in the MIDI sequence.
 
-### A) If the parameter’s value range is ≤ 127 (column L of the table):
+### A) If the parameter’s value range (column L of the table) is ≤ 127:
 
 1. delete CC#99, 98, and 6
 
@@ -68,7 +68,7 @@ Fortunately, when the parameter can be controlled by both methods, it is possibl
 
 The conversion is straightforward and doesn’t cause any resolution loss.
 
-### B) If the parameter’s value range is > 127 (column L):
+### B) If the parameter’s value range (column L of the table) is > 127:
 
 1. split into two distinct lanes or patterns the values ≤ 127 (accessed via NRPN with CC#6 = 0), and the values > 127 (accessed via NRPN with CC#6 = 1)
 
