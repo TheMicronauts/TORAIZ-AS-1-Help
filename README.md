@@ -50,8 +50,8 @@ This XML file allows you to import it into your Cubase or Nuendo _Project_, alon
 
 Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic.
 
-<img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />     
-
+<img width="1992" height="1714" alt="AS-1 rà0 (Init)" src="https://github.com/user-attachments/assets/11763042-c816-4e5e-b683-65d82b0d471a" />
+   
 _Cubendo’s List Editor (best in class – other DAWs, seriously, take note, copy it, improve it if you can)_
 
 ## Converting NRPNs Into Single CCs
@@ -149,7 +149,7 @@ Ce fichier XML vous permet de l’importer dans votre projet Cubase ou Nuendo, a
 
 Une fois que vous vous êtes forgé un modèle mental de l’instrument, cette façon de travailler perturbe beaucoup moins le processus créatif. Elle réduit la charge cognitive en supprimant la nécessité d’apprendre et de mémoriser de nouvelles interactions. Elle est de manière générale plus simple, rapide et flexible qu’en recourant à des couches supplémentaires d’abstraction et des éditeurs dédiés – hélas presque toujours buggés, incomplets et idiosyncratiques.
 
-<img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />     
+<img width="1992" height="1714" alt="AS-1 rà0 (Init)" src="https://github.com/user-attachments/assets/11763042-c816-4e5e-b683-65d82b0d471a" />
 
 _Le List Editor de Cubendo (le meilleur du genre — sérieusement les autres, prenez-en de la graine, copiez-le ou améliorez-le si vous pouvez…)_
 
