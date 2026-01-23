@@ -24,7 +24,7 @@ _A classic silver box_
 
 The TORAIZ AS-1’s MIDI implementation is great. It is no coincidence, as Dave Smith was among the small group of genius electronic luthiers who established the MIDI standard. All sound parameters can be set and automated directly from the DAW using [MIDI 1.0 messages](https://github.com/TheMicronauts/MIDI-1.0-Messages-Demystified). 
 
-They are listed in this Google Sheets document along with their corresponding controls and value ranges:
+They are listed in this Google Sheets document:
 
 https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
 
@@ -125,7 +125,7 @@ _Une célèbre boîte argentée_
 
 L’implémentation MIDI du TORAIZ AS-1 est très complète. Ce n’est pas un hasard, puisque Dave Smith faisait partie du petit groupe de luthiers électroniques de génie qui ont établi la norme MIDI. Tous les paramètres sonores peuvent être réglés et automatisés directement depuis un séquenceur via des [messages MIDI 1.0](https://github.com/TheMicronauts/MIDI-1.0-Messages-Demystified). 
 
-Ceux-ci sont répertoriés dans ce document Google Sheets, accompagnés de leurs commandes correspondantes et des plages de valeurs :
+Ceux-ci sont répertoriés dans ce document Google Sheets :
 
 https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
 
