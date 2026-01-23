@@ -117,7 +117,7 @@ Il semblerait qu’il partage la même implémentation MIDI que le [Prophet-6](h
 _TORAIZ AS-1_
 
 ![2022-11-07 15 16 13](https://github.com/user-attachments/assets/7d2e4497-e7b0-4cc4-be8c-169a956db544)
-_A classic silver box_
+_une célèbre « boîte argentée_
 
 ## Pense-bête MIDI
 
