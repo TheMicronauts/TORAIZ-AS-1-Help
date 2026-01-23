@@ -137,7 +137,7 @@ https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOY
 
 J’ai donc créé un pattern MIDI dédié (_Part_, en jargon Cubendo) contenant l’ensemble des CC utilisés par l’AS-1, avec une courte description sous forme de _Score_ or _Text Events_ (nommés différemment à différents endroits du logiciel, fatigue).
 
-Placée n’importe où sur une piste MIDI, cette _Part_ permet des ajustements rapides puis garantit qu’à la relecture, l’instrument retrouve ces réglages à ce moment précis – par exemple, au début d’un morceau pour restaurer son état initial (où elle peut également servir de bouton « Panic »). Non seulement cela évite de se farcir les menus du synthé, mais cela simplifie considérablement la gestion des presets, de la mémoire interne, des Program Changes et des dumps SysEx.
+Placée n’importe où sur une piste MIDI, cette _Part_ permet des ajustements rapides puis garantit qu’à la relecture, l’instrument retrouve ces réglages à ce moment précis – par exemple, au début d’un morceau pour restaurer son état initial (où elle peut également servir de bouton « Panic »). Non seulement cela évite de se farcir les menus du synthé, mais cela réduit considérablement le temps perdu à gérer les presets, la mémoire interne, les Program Changes et les dumps SysEx.
 
 Ce fichier XML vous permet de l’importer dans votre projet Cubase ou Nuendo, accompagnée de deux autres _Parts_ (via _File > Import > Track Archive…_) :
 
