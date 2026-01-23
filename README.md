@@ -137,7 +137,7 @@ https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOY
 
 J’ai donc créé un pattern MIDI dédié (_Part_, en jargon Cubendo) contenant l’ensemble des CC utilisés par l’AS-1, avec une courte description sous forme de _Score_ or _Text Events_ (nommés différemment à différents endroits du logiciel, fatigue).
 
-Placée n’importe où sur une piste MIDI, cette _Part_ permet des ajustements rapides puis garantit qu’à la relecture, l’instrument retrouve ces réglages à ce moment précis – par exemple, au début d’un morceau pour restaurer son état initial (où elle peut également servir de bouton « Panic »). Non seulement cela évite de se farcir les menus du synthé, mais cela réduit considérablement le temps perdu à gérer les presets, la mémoire interne, les Program Changes et les dumps SysEx.
+Placée n’importe où sur une piste MIDI, cette _Part_ permet des ajustements rapides puis garantit qu’à la relecture, l’instrument retrouve ces réglages à ce moment précis – par exemple, au début d’un morceau pour restaurer son état initial (où elle peut également servir de bouton « Panic »). Non seulement ça évite de se farcir les menus du synthé, mais ça réduit considérablement le temps perdu à gérer les presets, la mémoire interne, les Program Changes et les dumps SysEx.
 
 Ce fichier XML vous permet de l’importer dans votre projet Cubase ou Nuendo, accompagnée de deux autres _Parts_ (via _File > Import > Track Archive…_) :
 
@@ -145,7 +145,7 @@ Ce fichier XML vous permet de l’importer dans votre projet Cubase ou Nuendo, a
 
 - La deuxième _Part_ contient les réglages _Global_ de l’unité, avec des valeurs par défaut que je trouve pertinentes (celles indiquées dans le premier tableau) et que vous pourrez ajuster à votre convenance.
 
-- La troisième _Part_ contient le message SysEx qui déclenche l’envoi par l’unité des réglages de patch actuellement présent dans sa mémoire vive (DSI appelle ce message _Request Program Edit Buffer Dump_). Elle permettra de sauver ce dump (également un SysEx) dans une _Part_ MIDI, afin de le conserver au sein du projet auquel il se rapporte.
+- La troisième _Part_ contient le message SysEx qui déclenche l’envoi par le synthé des réglages de patch qu’il a en mémoire vive (DSI appelle ce message _Request Program Edit Buffer Dump_). Ce dump (également un SysEx) est alors placé dans une _Part_ MIDI et peut être ainsi sauvé au sein du projet auquel il se rapporte.
 
 Une fois que vous vous êtes forgé un modèle mental de l’instrument, cette manière de faire perturbe beaucoup moins le processus créatif. Elle réduit la charge cognitive en supprimant la nécessité d’apprendre et de mémoriser de nouvelles interactions. Elle est de manière générale plus simple, rapide et flexible qu’en recourant à des couches supplémentaires d’abstraction et des éditeurs dédiés – presque toujours buggés, incomplets et idiosyncratiques, hélas.
 
