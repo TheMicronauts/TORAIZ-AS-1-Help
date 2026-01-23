@@ -20,11 +20,11 @@ _TORAIZ AS-1_
 ![2022-11-07 15 16 13](https://github.com/user-attachments/assets/7d2e4497-e7b0-4cc4-be8c-169a956db544)
 _A classic silver box_
 
-## MIDI Cheat Sheet
+## MIDI Cheat & Patch Sheet
 
 The TORAIZ AS-1’s MIDI implementation is pretty comprehensive (it is no coincidence, as Dave Smith was among the small group of genius electronic luthiers who established the MIDI standard). All sound parameters can be set and automated directly from the DAW using the [MIDI 1.0 messages](https://github.com/TheMicronauts/MIDI-1.0-Messages-Demystified) listed in this Google Sheets document:
 
-https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
+https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c
 
 - The first table lists all sound parameters alongside their physical controls, the CC and NRPN numbers that control them, and their range of both real-world and MIDI values.
 
@@ -123,11 +123,11 @@ _Une célèbre boîte argentée_
 
 L’implémentation MIDI du TORAIZ AS-1 est assez complète (ce n’est pas pour rien si Dave Smith faisait partie du petit groupe de luthiers électroniques de génie qui ont établi la norme MIDI). Tous les paramètres sonores peuvent être réglés et automatisés directement depuis un séquenceur via les [messages MIDI 1.0](https://github.com/TheMicronauts/MIDI-1.0-Messages-Demystified) répertoriés dans ce document Google Sheets :
 
-https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
+https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c
 
-- Le premier tableau liste l’ensemble des paramètres sonores en regard de leurs commandes physiques, des CC et des NRPN qui les pilotent, et de leurs plages de valeurs, réelles et MIDI.
+- Le tableau _[MIDI Cheat Sheet](https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c/edit?gid=0)_ liste l’ensemble des paramètres sonores en regard de leurs commandes physiques, des CC et des NRPN qui les pilotent, et de leurs plages de valeurs, réelles et MIDI.
 
-- Le second tableau, accessible via un onglet en bas à gauche, propose des fiches de patch vierges placées côte à côte, à compléter avec vos propres valeurs (après avoir copié ou téléchargé la feuille). Il est fait pour noter rapidement des réglages et les comparer.
+- Le tableau _[Patch Comparison](https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c/edit?gid=1228388295)_ propose des fiches de patch vierges placées côte à côte, à compléter avec vos propres valeurs (après avoir copié ou téléchargé la feuille). Il est fait pour noter rapidement des réglages et les comparer.
 
 ## Parts MIDI de réinitialisation et de contrôle pour Cubendo
 
