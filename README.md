@@ -98,11 +98,34 @@ Some resolution loss is unavoidable: it’s halved when the value range is 0–2
 
 # Pioneer DJ-Dave Smith Instruments TORAIZ AS-1 MIDI Toolkit (version française)
 
-C’est un synthé analogique entièrement à commande numérique. Oui le nom est débile et pourrait être celui d’une voiture électrique, mais bon, Pioneer DJ n’a jamais été le temple du bon goût et de la classe.
+## Introduction
 
-Le verdict ? Il n’a vraiment pas autant de personnalité mais il est beaucoup plus versatile.
+Le TORAIZ AS-1 est un monosynthé analogique entièrement à commande numérique, conçu par Dave Smith Instruments (désormais [Sequential](https://sequential.com/)) pour [Pioneer DJ](https://www.pioneerdj.com/). Oui, le nom craint et ressemble à celui d’une voiture électrique, mais bon, Pioneer DJ n’a jamais été le temple de la discrétion et de la classe. 
 
-Apparemment conçu pour le live, il n’a pas rencontré un franc succès en raison de problèmes de synchronisation. En studio où il peut être joué et automatisé en tant que module sonore via le DAW, il est excellent.
+Le moteur de synthèse et le trajet du signal sont entièrement analogiques, à l'exception d'un multi-effet numérique optionnel. En substance, il offre une unique voix issue du Prophet-6, intégrée dans un boîtier dont le format rappelle celui d'une célèbre « boîte argentée » (côté son, il n’a clairement pas autant de caractère, mais il est bien plus polyvalent).
+
+Apparemment conçu pour le live, il n’a pas rencontré un franc succès en raison de [problèmes](https://gearspace.com/board/electronic-music-instruments-and-electronic-music-production/1244592-pioneer-toraiz-as1-midi-out-issues.html) de [synchronisation](https://gearspace.com/board/showpost.php?p=15940161&postcount=1). En studio, où il peut être joué et automatisé comme un module sonore via MIDI, il est excellent.
+
+[*Sound On Sound*](https://www.soundonsound.com/reviews/pioneer-dj-toraiz-1) l‘a testé en novembre 2017.
+
+Il semblerait que le [Prophet-6](https://sequential.com/product/prophet-6/) partage la même implémentation MIDI, bien que je ne puisse pas le confirmer. Si c’est le cas, ces ressources pourront également servir à ce synthétiseur.
+
+![2017-10-25 17 13 47](https://github.com/user-attachments/assets/67185c02-7175-4bcf-a8d5-be0f94a32024)
+_TORAIZ AS-1_
+
+![2022-11-07 15 16 13](https://github.com/user-attachments/assets/7d2e4497-e7b0-4cc4-be8c-169a956db544)
+_A classic silver box_
+
+## Pense-bête MIDI
+
+The TORAIZ AS-1’s MIDI implementation is great. It is no coincidence, as Dave Smith was among the small group of genius electronic luthiers who established the MIDI standard. All sound parameters can be set and automated directly from the DAW using [MIDI 1.0 messages](https://github.com/TheMicronauts/MIDI-1.0-Messages-Demystified). They are listed in this Google Sheets document along with their corresponding controls and value ranges:
+
+https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
+
+- The first table lists all sound parameters alongside their physical controls, the CC and NRPN numbers that control them, and their range of both real-world and MIDI values.
+
+- The second table, accessible via a tab at the bottom left, provides side-by-side blank patch sheets to be filled in with your own values (after copying or downloading the spreadsheet). It is designed for quickly noting down settings and comparing patches.
+
 
 Tous les paramètres de ce synthé peuvent être automatisés via MIDI en utilisant des NRPN (moitié droite de ce tableau). Une bonne moitié peut aussi l’être en utilisant un simple CC (moitié gauche du tableau). 
 
