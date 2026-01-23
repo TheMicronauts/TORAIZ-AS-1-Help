@@ -103,7 +103,7 @@ Some resolution loss is unavoidable: it’s halved when the value range is 0–2
 
 Le TORAIZ AS-1 est un monosynthé analogique entièrement à commande numérique, conçu par Dave Smith Instruments (désormais [Sequential](https://sequential.com/)) pour [Pioneer DJ](https://www.pioneerdj.com/). Oui, le nom craint et ressemble à celui d’une voiture électrique, mais bon, Pioneer DJ n’a jamais été le temple de la discrétion et de la classe. 
 
-Le moteur de synthèse et le trajet du signal sont entièrement analogiques, à l'exception d'un multi-effet numérique optionnel. En substance, il offre une unique voix issue du Prophet-6, intégrée dans un boîtier dont le format rappelle celui d'une célèbre « boîte argentée » (côté son, il n’a clairement pas autant de caractère que cette dernière, mais il est bien plus polyvalent).
+Le moteur de synthèse et le trajet du signal sont entièrement analogiques, à l’exception d’un multi-effet numérique optionnel. En substance, il offre une unique voix issue du Prophet-6, intégrée dans un boîtier dont le format rappelle celui d’une célèbre « boîte argentée » (côté son, il n’a clairement pas autant de caractère que cette dernière, mais il est bien plus polyvalent).
 
 Apparemment conçu pour le live, il n’a pas rencontré un franc succès en raison de [problèmes](https://gearspace.com/board/electronic-music-instruments-and-electronic-music-production/1244592-pioneer-toraiz-as1-midi-out-issues.html) de [synchronisation](https://gearspace.com/board/showpost.php?p=15940161&postcount=1) (Oui… Le jour où les codeurs retireront leurs moufles, les poules auront des dents). En studio, où il peut être joué et automatisé comme un module sonore via MIDI, il est excellent.
 
@@ -129,7 +129,7 @@ https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOY
 
 ## Parts MIDI de réinitialisation et de contrôle pour Cubendo
 
-À l’arrêt, le moyen le plus direct d’ajuster à distance depuis Cubase ou Nuendo l'état et le timbre d'un instrument MIDI implique d’activer _Acoustic Feedback_ dans le _List Editor_, puis de saisir manuellement les CC et de faire défiler leurs valeurs à la souris (à condition, bien sûr, qu'aucune _Preferences_ n’interfère avec cette fonctionnalité).
+À l’arrêt, le moyen le plus direct d’ajuster à distance depuis Cubase ou Nuendo l’état et le timbre d’un instrument MIDI consiste à activer _Acoustic Feedback_ dans le _List Editor_, puis à saisir manuellement les CC et à faire défiler leurs valeurs à la souris (à condition, bien sûr, qu’aucune _Preferences_ n’interfère avec cette fonctionnalité).
 
 J’ai donc créé un pattern MIDI dédié (_Part_, en jargon Cubendo) contenant l’ensemble des CC utilisés par l’AS-1, avec une courte description sous forme de _Score_ or _Text Events_ (nommés différemment à différents endroits du logiciel, fatigue).
 
@@ -151,11 +151,11 @@ _Le List Editor de Cubendo (le meilleur du genre — sérieusement les autres, p
 
 ## Conversion des NRPN en CC simples
 
-Comme nous venons de le voir, tous les paramètres de ce synthé peuvent être automatisés via MIDI à l'aide de NRPN (moitié droite du premier tableau). Un bon nombre d’entre eux peuvent également l’être à l’aide de CC simples (moitié gauche du premier tableau).
+Comme nous venons de le voir, tous les paramètres de ce synthé peuvent être automatisés via MIDI à l’aide de NRPN (moitié droite du premier tableau). Un bon nombre d’entre eux peuvent également l’être à l’aide de CC simples (moitié gauche du premier tableau).
 
 Bien sûr, un CC unique est plus facile à visualiser et à éditer que son équivalent NRPN (qui repose sur un groupe de quatre CC consécutifs). De plus, les CC constituant un NRPN donné peuvent entrer en conflit dans le flux MIDI avec les mêmes CC utilisés par d’autres NRPN, empêchant ainsi le synthé de restituer le son escompté.
 
-Heureusement, lorsqu'un paramètre peut être contrôlé par les deux méthodes, il est possible en cas de besoin de convertir les NRPN en CC simples au sein d’une séquence MIDI, en s’appuyant dur les diverses fonctionnalités de Cubendo, notamment le _Logical Editor_.
+Heureusement, lorsqu’un paramètre peut être contrôlé par les deux méthodes, il est possible en cas de besoin de convertir les NRPN en CC simples au sein d’une séquence MIDI, en s’appuyant dur les diverses fonctionnalités de Cubendo, notamment le _Logical Editor_.
 
 ### Si la plage de valeurs du paramètre (colonne L du premier tableau) est ≤ 127 :
 
