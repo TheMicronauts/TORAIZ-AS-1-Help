@@ -88,11 +88,11 @@ The conversion is straightforward and doesn’t cause any resolution loss.
      
    - When the value range is 0–164 (LOW-PASS FILTER Cutoff) and the target value is ≤ 127 (accessed with CC#6 = 0)
      
-     `y = x / (165 / 128)` = `x * (128 / 165)`
+     `y = x / (165 / 128)` = `x * (128 / 165)` = `x * 0.7756`
      
    - When the value range is 0–164 (LOW–PASS FILTER Cutoff) and the target value is > 127 (accessed with CC#6 = 1)
      
-     `y = (x * (128 / 165)) + 100`
+     `y = (x * 0.7756) + 100`
 
 Some resolution loss is unavoidable: it’s halved when the value range is 0–254 and reduced by a factor of 1.3 for the Low-Pass Filter Cutoff. 
 
