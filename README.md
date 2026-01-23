@@ -131,7 +131,7 @@ https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOY
 
 ## Parts MIDI de réinitialisation et de contrôle pour Cubendo
 
-À l’arrêt, le moyen le plus direct d’ajuster à distance depuis Cubase ou Nuendo l’état et le timbre d’un instrument MIDI consiste à activer _Acoustic Feedback_ dans le _List Editor_, puis à saisir manuellement les CC et à faire défiler leurs valeurs à la souris (à condition, bien sûr, qu’aucune _Preferences_ n’interfère avec cette fonctionnalité).
+À l’arrêt, le moyen le plus direct d’ajuster à distance depuis Cubase ou Nuendo l’état et le timbre d’un instrument MIDI consiste à activer _Acoustic Feedback_ dans le _List Editor_, puis à saisir manuellement les CC et à faire défiler leurs valeurs à la souris (à condition, bien sûr, qu’aucun réglage en _Preferences_ n’interfère avec cette fonctionnalité).
 
 J’ai donc créé un pattern MIDI dédié (_Part_, en jargon Cubendo) contenant l’ensemble des CC utilisés par l’AS-1, avec une courte description sous forme de _Score_ ou _Text Events_ (nommés différemment à différents endroits du logiciel, fatigue).
 
