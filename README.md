@@ -88,7 +88,7 @@ The conversion is straightforward and doesn’t cause any resolution loss.
      
    - When the value range is 0–164 (LOW-PASS FILTER Cutoff) and the target value is ≤ 127 (accessed with CC#6 = 0)
      
-     `y = `x * 0.78`
+     `y = x * 0.78`
      
    - When the value range is 0–164 (LOW–PASS FILTER Cutoff) and the target value is > 127 (accessed with CC#6 = 1)
      
