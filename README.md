@@ -143,7 +143,7 @@ Ce fichier XML vous permet de l’importer dans votre projet Cubase ou Nuendo, a
 
   Afin d’éviter de perdre accidentellement un réglage important, les messages MIDI qui contrôlent directement le patch sont mutés ; ils doivent donc être réactivés pour fonctionner. En revanche, les CC qui coupent le son, l’arpégiateur ou réinitialisent les paramètres de jeu sont démutés. C’est ce qu’on veut a priori lorsque cette _Part_ se trouve à son endroit de prédilection, juste avant le début du morceau. Ils devront probablement être mutés si la _Part_ est utilisée en milieu de morceau.
 
-- La deuxième _Part_ contient les réglages _Global_ de l’unité, avec des valeurs par défaut que je trouve pertinentes (celles indiquées dans le premier tableau) et que vous devrez ajuster à votre environnement.
+- La deuxième _Part_ contient les réglages _Global_ de l’unité, avec des valeurs par défaut que je trouve pertinentes (celles indiquées dans le premier tableau) mais que vous devrez adapter à votre environnement.
 
 - La troisième _Part_ contient le message SysEx qui déclenche l’envoi par le synthé des réglages de patch qu’il a en mémoire vive (DSI appelle ce message _Request Program Edit Buffer Dump_). Ce dump (également un SysEx) est alors placé dans une _Part_ MIDI et peut être ainsi sauvé au sein du projet auquel il se rapporte.
 
