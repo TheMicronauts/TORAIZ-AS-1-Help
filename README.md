@@ -109,7 +109,7 @@ Apparemment conçu pour le live, il n’a pas rencontré un franc succès en rai
 
 [*Sound On Sound*](https://www.soundonsound.com/reviews/pioneer-dj-toraiz-1) l‘a testé en novembre 2017.
 
-Il semblerait que le [Prophet-6](https://sequential.com/product/prophet-6/) partage la même implémentation MIDI, bien que je ne puisse pas le confirmer. Si c’est le cas, ces ressources pourront également servir à ce synthétiseur.
+Il semblerait qu’il partage la même implémentation MIDI que le [Prophet-6](https://sequential.com/product/prophet-6/), bien que je ne puisse pas le confirmer. Si c’est le cas, ces ressources pourront également servir à ce synthé.
 
 ![2017-10-25 17 13 47](https://github.com/user-attachments/assets/67185c02-7175-4bcf-a8d5-be0f94a32024)
 _TORAIZ AS-1_
