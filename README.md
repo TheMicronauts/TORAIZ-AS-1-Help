@@ -86,15 +86,15 @@ The conversion is straightforward and doesn’t cause any resolution loss.
      
      `y = (x / 2) + 64`
      
-   - When the value range is 0–164 (LOW-PASS FILTER Cutoff) and the target value is ≤ 127 (accessed with CC#6 = 0)
+   - When the value range is 0–164 (_LOW–PASS FILTER Cutoff_) and the target value is ≤ 127 (accessed with CC#6 = 0)
      
      `y = x * 0.78`
      
-   - When the value range is 0–164 (LOW–PASS FILTER Cutoff) and the target value is > 127 (accessed with CC#6 = 1)
+   - When the value range is 0–164 (_LOW–PASS FILTER Cutoff_) and the target value is > 127 (accessed with CC#6 = 1)
      
      `y = (x * 0.78) + 100`
 
-Some resolution loss is unavoidable: it’s halved when the value range is 0–254 and divided by a factor of 1.3 for the Low-Pass Filter Cutoff. 
+Some resolution loss is unavoidable: it’s halved when the value range is 0–254 and divided by a factor of 1.3 for the _LOW–PASS FILTER Cutoff_. 
 
 # Pioneer DJ-Dave Smith Instruments TORAIZ AS-1 MIDI Toolkit (version française)
 
@@ -128,7 +128,7 @@ https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOY
 
 ## Parts MIDI de réinitialisation et de contrôle pour Cubendo
 
-À l’arrêt, le moyen le plus direct d’ajuster à distance depuis Cubase ou Nuendo l'état et le timbre d'un instrument MIDI consiste à activer _Acoustic Feedback_ dans le _List Editor_, puis à saisir manuellement les CC et à faire défiler leurs valeurs (en supposant, bien sûr, qu'aucune _Preferences_ n’interfère avec cette fonctionnalité).
+À l’arrêt, le moyen le plus direct d’ajuster à distance depuis Cubase ou Nuendo l'état et le timbre d'un instrument MIDI implique d’activer _Acoustic Feedback_ dans le _List Editor_, puis de saisir manuellement les CC et de faire défiler leurs valeurs à la souris (à condition, bien sûr, qu'aucune _Preferences_ n’interfère avec cette fonctionnalité).
 
 J’ai donc créé un pattern MIDI dédié (_Part_, en jargon Cubendo) contenant l’ensemble des CC utilisés par l’AS-1, avec une courte description sous forme de _Score_ or _Text Events_ (nommés différemment à différents endroits du logiciel, fatigue).
 
@@ -146,94 +146,48 @@ Une fois que vous vous êtes forgé un modèle mental de l’instrument, cette m
 
 <img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />     
 
-_Le List Editor de Cubendo (le meilleur du genre — sérieusement les autres, prenez-en de la graine, copiez-le ou améliorez-le… Si vous pouvez)_
+_Le List Editor de Cubendo (le meilleur du genre — sérieusement les autres, prenez-en de la graine, copiez-le ou améliorez-le si vous pouvez…)_
 
-## Converting NRPNs Into Single CCs
+## Conversion des NRPN en CC simples
 
-As we’ve just seen, all parameters of this synth can be automated via MIDI using NRPNs (right half of the first table), and a good number of them can also be automated using single CCs (left half of the first table).
+Comme nous venons de le voir, tous les paramètres de ce synthé peuvent être automatisés via MIDI à l'aide de NRPN (moitié droite du premier tableau). Un bon nombre d’entre eux peuvent également l’être à l’aide de CC simples (moitié gauche du premier tableau).
 
-Now, a single CC is quicker to visualise and edit than its NRPN equivalent (which uses a group of four consecutive CCs). Moreover, CC#s constituting a specific NRPN can conflict on the MIDI stream with the same CC#s used by other NRPNs, preventing the synth from recalling the intended sound.
+Bien sûr, un CC unique est plus facile à visualiser et à éditer que son équivalent NRPN (qui repose sur un groupe de quatre CC consécutifs). De plus, les CC constituant un NRPN donné peuvent entrer en conflit dans le flux MIDI avec les mêmes CC utilisés par d’autres NRPN, empêchant ainsi le synthé de restituer le son escompté.
 
-Fortunately, when the parameter can be controlled by both methods, it is possible—if needed—to convert NRPNs into single CCs within the MIDI sequence, using Cubendo’s various functionalities, including the _Logical Editor_.
+Heureusement, lorsqu'un paramètre peut être contrôlé par les deux méthodes, il est possible en cas de besoin de convertir les NRPN en CC simples au sein d’une séquence MIDI, en s’appuyant dur les diverses fonctionnalités de Cubendo, notamment le _Logical Editor_.
 
-### If the parameter’s value range (column L of the first table) is ≤ 127:
-
-1. delete CC#99, 98, and 6
-
-2. convert CC#38 into the CC whose number matches the target parameter (column E)
-
-The conversion is straightforward and doesn’t cause any resolution loss.
-
-### If the parameter’s value range (column L of the first table) is > 127:
-
-1. split into two distinct lanes or patterns the values ≤ 127 (accessed via NRPN with CC#6 = 0), and the values > 127 (accessed via NRPN with CC#6 = 1)
-
-2. delete CC#99, 98, and 6
-
-3. convert CC#38 into the CC whose number matches the target parameter (see column E)
-
-4. modify the values set for the new CC using the formulas below (where x is the old value and y the new one):
-
-   - When the value range is 0–254 or 0–255 and the target value is ≤ 127 (accessed with CC#6 = 0)
-     
-     `y = x / 2`
-     
-   - When the value range is 0–254 or 0–255 and the target value is > 127 (accessed with CC#6 = 1)
-     
-     `y = (x / 2) + 64`
-     
-   - When the value range is 0–164 (LOW-PASS FILTER Cutoff) and the target value is ≤ 127 (accessed with CC#6 = 0)
-     
-     `y = x * 0.78`
-     
-   - When the value range is 0–164 (LOW–PASS FILTER Cutoff) and the target value is > 127 (accessed with CC#6 = 1)
-     
-     `y = (x * 0.78) + 100`
-
-Some resolution loss is unavoidable: it’s halved when the value range is 0–254 and divided by a factor of 1.3 for the Low-Pass Filter Cutoff. 
-
-
-
-Tous les paramètres de ce synthé peuvent être automatisés via MIDI en utilisant des NRPN (moitié droite de ce tableau). Une bonne moitié peut aussi l’être en utilisant un simple CC (moitié gauche du tableau). 
-
-Or, un CC unique est plus rapide à visualiser et à modifier que son équivalent en NRPN (un groupe de quatre CC qui se suivent). De plus, les CC# d’un NRPN en particulier peuvent entrer en collision dans le bus MIDI avec les mêmes CC# utilisés par les autres NRPN, empêchant ainsi le synthé de retrouver le son souhaité.
-
-Heureusement, lorsque le paramètre est contrôlable par les deux méthodes, il est possible si besoin de convertir les NRPN en CC simples dans la séquence MIDI.
-
-
-
-A) Si la plage de valeurs du paramètre est ≤ 127 (colonne L), la conversion est directe et n’entraîne pas de perte de résolution ; il suffit de :
+### Si la plage de valeurs du paramètre (colonne L du premier tableau) est ≤ 127 :
 
 1. supprimer les CC#99, 98 et 6
 
-2. convertir les CC#38 en CC dont le nº correspond au paramètre considéré (colonne E)
+2. convertir les CC#38 en CC dont le numéro correspond au paramètre considéré (colonne E)
 
+La conversion est directe et n’entraîne aucune perte de résolution.
 
+### Si la plage de valeurs du paramètre (colonne L du premier tableau) est > 127 :
 
-B) Si la plage de valeurs du paramètre est > 127 (colonne L), la perte de résolution est inévitable et il faut :
-
-1. séparer en deux portées ou deux patterns distincts les valeurs ≤ 127 (accédées en NRPN via CC#6 = 0) et les valeurs > 127 (accédées en NRPN via CC#6 = 1)
+1. séparer en Parts distinctes les valeurs ≤ 127 (accédées par les NRPN où CC#6 = 0) et les valeurs > 127 (accédées par les NRPN où CC#6 = 1).
 
 2. supprimer les CC#99, 98 et 6
 
-3. convertir les CC#38 en CC dont le nº correspond au paramètre considéré (colonne E)
+3. convertir les CC#38 en CC dont le numéro correspond au paramètre considéré (colonne E)
 
-4. modifier les valeurs envoyées par les nouveaux CC en appliquant les formules ci-dessous (où x est l’ancienne valeur et y la nouvelle)
+4. modifier les valeurs envoyées par les nouveaux CC en appliquant les formules ci-dessous (où x est l’ancienne valeur et y la nouvelle) :
 
-a) quand la plage des valeurs est 0–254 ou 0–255 et que la valeur souhaitée est ≤ 127 (accédées via CC#6 = 0)
-y = x / 2
+   - Lorsque la plage de valeurs est 0–254 ou 0–255 et que la valeur cible est ≤ 127 (les Parts venant des CC#6 = 0)
+     
+     `y = x / 2`
+     
+   - Lorsque la plage de valeurs est 0–254 ou 0–255 et que la valeur cible est > 127 (les Parts venant des CC#6 = 1)
+     
+     `y = (x / 2) + 64`
+     
+   - Lorsque la plage de valeurs est 0–164 (_LOW-PASS FILTER Cutoff_) et que la valeur cible est ≤ 127 (les Parts venant des CC#6 = 0)
+     
+     `y = x * 0.78`
+     
+   -  Lorsque la plage de valeurs est 0–164 (_LOW-PASS FILTER Cutoff_) et que la valeur cible est > 127 (les Parts venant des CC#6 = 1)
+     
+     `y = (x * 0.78) + 100`
 
-b) quand la plage des valeurs est 0–254 ou 0–255 et que la valeur souhaitée est > 127 (accédées via CC#6 = 1)
-y = (x / 2) + 64
-
-c) quand la plage des valeurs est 0–164 (LOW-PASS FILTER Cutoff) et que la valeur souhaitée est ≤ 127 (accédées via CC#6 = 0)
-y = x / (165 / 128) = x * 0.7812
-
-d) quand la plage des valeurs est 0–164 (LOW-PASS FILTER Cutoff) et que la valeur souhaitée est > 127 (accédées via CC#6 = 1)
-y = (x * 0.7812) + 100
-
-J’ai pour habitude de placer ce genre de pattern au début de la principale piste MIDI pilotant un synthé. La jouer permet de remettre à zéro les paramètres de jeu et de retrouver le son de base pour le morceau considéré. Grâce à la fonction Acoustic Feedback de Cubendo, je m’en sers aussi pour programmer à distance le patch, sans devoir naviguer dans les menus et sous-menus de l’interface du synthé.
-
-Pour ne pas risquer de perdre par inadvertence un réglage important, les messages MIDI pilotant directement le patch sont tous mutés. Ils doivent donc être démutés avant de pouvoir modifier les réglages du synthé.
-
-Il semblerait que le Prophet-6 partage la même implémentation MIDI, bien que je ne puisse pas le vérifier. Si c’est le cas, ces ressources peuvent aussi servir à ce synthé.
+Une perte de résolution est inévitable : elle sera divisée par deux lorsque la plage de valeurs est 0–254 et par 1,3 pour _LOW–PASS FILTER Cutoff_.
