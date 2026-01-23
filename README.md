@@ -143,7 +143,7 @@ Ce fichier XML vous permet de l’importer dans votre projet Cubase ou Nuendo, a
 
 - La première _Part_ est celle décrite ci-dessus et contient les réglages de patch (_Program_ en jargon DSI). Sa capture d’écran se trouve également en illustration ci-dessous. Afin d’éviter perdre accidentellement un réglage important, les messages MIDI qui contrôlent directement le patch sont mutés ; ils doivent donc être réactivés pour fonctionner. En revanche, les CC qui coupent le son, l’arpégiateur ou réinitialisent les paramètres de jeu sont démutés. C’est ce qu’on veut a priori lorsque cette Part se trouve à son endroit de prédilection, juste avant le début du morceau. Ils devront probablement être mutés si la Part est utilisée au milieu du morceau.
 
-- La deuxième _Part_ contient les réglages _Global_ de l’unité, avec des valeurs par défaut que je juge pertinentes (celles indiquées dans le premier tableau) et que vous pourrez ajuster à votre convenance.
+- La deuxième _Part_ contient les réglages _Global_ de l’unité, avec des valeurs par défaut que je trouve pertinentes (celles indiquées dans le premier tableau) et que vous pourrez ajuster à votre convenance.
 
 - La troisième _Part_ contient le message SysEx qui déclenche l’envoi par l’unité des réglages de patch actuellement présent dans sa mémoire vive (DSI appelle ce message _Request Program Edit Buffer Dump_). Elle permettra de sauver ce dump (également un SysEx) dans une _Part_ MIDI, afin de le conserver au sein du projet auquel il se rapporte.
 
