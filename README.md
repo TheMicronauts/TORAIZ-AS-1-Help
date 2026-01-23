@@ -125,7 +125,7 @@ https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOY
 
 - Le premier tableau liste l’ensemble des paramètres sonores en regard de leurs commandes physiques, des CC et des NRPN qui les pilotent, et de leurs plages de valeurs, réelles et MIDI.
 
-- Le second tableau, accessible via un onglet en bas à gauche, propose des fiches de patch vierges placées côte à côte, à compléter avec vos propres valeurs (après avoir copié ou téléchargé la feuille de calcul). Il est fait pour noter rapidement des réglages et les comparer.
+- Le second tableau, accessible via un onglet en bas à gauche, propose des fiches de patch vierges placées côte à côte, à compléter avec vos propres valeurs (après avoir copié ou téléchargé la feuille). Il est fait pour noter rapidement des réglages et les comparer.
 
 ## Parts MIDI de réinitialisation et de contrôle pour Cubendo
 
