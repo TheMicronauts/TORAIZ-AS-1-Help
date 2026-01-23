@@ -103,7 +103,7 @@ Some resolution loss is unavoidable: it’s halved when the value range is 0–2
 
 ## Introduction
 
-Le TORAIZ AS-1 est un monosynthé analogique à commande numérique intégrale, conçu par Dave Smith Instruments (désormais [Sequential](https://sequential.com/)) pour [Pioneer DJ](https://www.pioneerdj.com/). Oui, le nom craint et ressemble à celui d’une voiture électrique, mais bon, Pioneer DJ n’a jamais été le temple de la discrétion et de la classe. 
+Le TORAIZ AS-1 est un monosynthé analogique à commande numérique intégrale, conçu par Dave Smith Instruments (désormais [Sequential](https://sequential.com/)) pour [Pioneer DJ](https://www.pioneerdj.com/). Oui, le nom craint et ressemble à celui d’un SUV électrique, mais bon, Pioneer DJ n’a jamais été le temple de la classe. 
 
 Le moteur de synthèse et le trajet du signal sont entièrement analogiques, à l’exception d’un multi-effet numérique optionnel. En substance, il offre une unique voix issue du Prophet-6, intégrée dans un boîtier dont le format rappelle celui d’une célèbre « boîte argentée » (côté son, il n’a clairement pas autant de caractère que cette dernière, mais il est bien plus polyvalent).
 
