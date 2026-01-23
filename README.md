@@ -157,7 +157,7 @@ _Le List Editor de Cubendo (le meilleur du genre — sérieusement les autres, p
 
 Comme nous venons de le voir, tous les paramètres de ce synthé peuvent être automatisés via MIDI à l’aide de NRPN (moitié droite du premier tableau). Un bon nombre d’entre eux peuvent également l’être à l’aide de CC simples (moitié gauche du premier tableau).
 
-Bien sûr, un CC unique est plus facile à visualiser et à éditer que son équivalent NRPN (qui repose sur un groupe de quatre CC consécutifs). De plus, les CC constituant un NRPN donné peuvent entrer en conflit dans le flux MIDI avec les mêmes CC utilisés par d’autres NRPN, empêchant ainsi le synthé de restituer le son escompté.
+Bien sûr, un CC unique est plus facile à visualiser et à éditer que son équivalent NRPN (un groupe de quatre CC envoyés simultanément). De plus, les CC constituant un NRPN donné peuvent entrer en conflit dans le flux MIDI avec les mêmes CC utilisés par d’autres NRPN, empêchant ainsi le synthé de restituer le son escompté.
 
 Heureusement, lorsqu’un paramètre peut être contrôlé par les deux méthodes, il est possible si besoin de convertir les NRPN en CC simples au sein d’une séquence MIDI, en s’appuyant sur les diverses fonctionnalités de Cubendo, notamment le _Logical Editor_.
 
