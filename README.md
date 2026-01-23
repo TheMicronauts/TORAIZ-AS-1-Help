@@ -147,7 +147,7 @@ Ce fichier XML vous permet de l’importer dans votre projet Cubase ou Nuendo, a
 
 - La troisième _Part_ contient le message SysEx qui déclenche l’envoi par le synthé des réglages de patch qu’il a en mémoire vive (DSI appelle ce message _Request Program Edit Buffer Dump_). Ce dump (également un SysEx) est alors placé dans une _Part_ MIDI et peut être ainsi sauvé au sein du projet auquel il se rapporte.
 
-Une fois que vous vous êtes forgé un modèle mental de l’instrument, cette façon de travailler perturbe beaucoup moins le processus créatif. Elle réduit la charge cognitive en supprimant la nécessité d’apprendre et de mémoriser de nouvelles interactions. Elle est de manière générale plus simple, rapide et flexible qu’en recourant à des couches supplémentaires d’abstraction et des éditeurs dédiés – presque toujours buggés, incomplets et idiosyncratiques, hélas.
+Une fois que vous vous êtes forgé un modèle mental de l’instrument, cette façon de travailler perturbe beaucoup moins le processus créatif. Elle réduit la charge cognitive en supprimant la nécessité d’apprendre et de mémoriser de nouvelles interactions. Elle est de manière générale plus simple, rapide et flexible qu’en recourant à des couches supplémentaires d’abstraction et des éditeurs dédiés – hélas presque toujours buggés, incomplets et idiosyncratiques.
 
 <img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />     
 
