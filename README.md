@@ -192,12 +192,7 @@ La conversion est directe et n’entraîne aucune perte de résolution.
      `y = x * 0.78`
      
    -  Lorsque la plage de valeurs est 0–164 (_LOW-PASS FILTER Cutoff_) et que la valeur cible est > 127 (les Parts venant des CC#6 = 1)
-   
-     `y = (x * 0.78) + 100`
-
-   - When the value range is 0–164 (_LOW–PASS FILTER Cutoff_) and the target value is > 127 (accessed with CC#6 = 1)
      
      `y = (x * 0.78) + 100`
 
-Some resolution loss is unavoidable: it’s halved when the value range is 0–254 and divided by a factor of 1.3 for the _LOW–PASS FILTER Cutoff_.
 Une perte de résolution est inévitable : elle sera divisée par deux lorsque la plage de valeurs est 0–254 et par 1,3 pour _LOW–PASS FILTER Cutoff_.
