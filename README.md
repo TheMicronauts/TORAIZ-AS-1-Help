@@ -1,4 +1,4 @@
-# Work in progress: Pioneer DJ-Dave Smith Instruments TORAIZ AS-1 MIDI Toolkit
+# Pioneer DJ-Dave Smith Instruments TORAIZ AS-1 MIDI Toolkit
 
 _([Version française ci-dessous](#vf))_
 
