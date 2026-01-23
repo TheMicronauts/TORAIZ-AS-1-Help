@@ -20,6 +20,8 @@ _TORAIZ AS-1_
 ![2022-11-07 15 16 13](https://github.com/user-attachments/assets/7d2e4497-e7b0-4cc4-be8c-169a956db544)
 _A classic silver box_
 
+---
+
 ## MIDI Cheat & Patch Sheet
 
 The TORAIZ AS-1’s MIDI implementation is pretty comprehensive (it is no coincidence, as Dave Smith was among the small group of genius electronic luthiers who established the MIDI standard). All sound parameters can be set and automated directly from the DAW using the [MIDI 1.0 messages](https://github.com/TheMicronauts/MIDI-1.0-Messages-Demystified) listed in this Google Sheets document:
@@ -29,6 +31,8 @@ https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE
 - The _[MIDI Cheat Sheet](https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c/edit?gid=0)_ table lists all sound parameters alongside their physical controls, the CC and NRPN numbers that control them, and their range of both real-world and MIDI values.
 
 - The _[Patch Comparison](https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c/edit?gid=1228388295)_ table provides side-by-side blank patch sheets to be filled in with your own values (after copying or downloading the spreadsheet). It is designed for quickly noting down settings and comparing patches.
+
+---
 
 ## Reset And Control MIDI Parts For Cubendo
 
@@ -53,6 +57,8 @@ Once you have established a mental model of the instrument, this workflow is far
 <img width="1992" height="1714" alt="AS-1 rà0 (Init)" src="https://github.com/user-attachments/assets/11763042-c816-4e5e-b683-65d82b0d471a" />
    
 _Cubendo’s List Editor (best in class – other DAWs, seriously, take note, copy it, improve it if you can)_
+
+---
 
 ## Converting NRPNs Into Single CCs
 
@@ -98,6 +104,8 @@ The conversion is straightforward and doesn’t cause any resolution loss.
 
 Some resolution loss is unavoidable: it’s halved when the value range is 0–254 and divided by a factor of 1.3 for the _LOW–PASS FILTER Cutoff_.
 
+---
+
 <a name="vf"></a>
 # Pioneer DJ-Dave Smith Instruments TORAIZ AS-1 MIDI Toolkit (Version française)
 
@@ -119,6 +127,8 @@ _TORAIZ AS-1_
 ![2022-11-07 15 16 13](https://github.com/user-attachments/assets/7d2e4497-e7b0-4cc4-be8c-169a956db544)
 _Une célèbre boîte argentée_
 
+---
+
 ## Pense-bête MIDI
 
 L’implémentation MIDI du TORAIZ AS-1 est assez complète (ce n’est pas pour rien si Dave Smith faisait partie du petit groupe de luthiers électroniques de génie qui ont établi la norme MIDI). Tous les paramètres sonores peuvent être réglés et automatisés directement depuis un séquenceur via les [messages MIDI 1.0](https://github.com/TheMicronauts/MIDI-1.0-Messages-Demystified) répertoriés dans ce document Google Sheets :
@@ -128,6 +138,8 @@ https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE
 - Le tableau _[MIDI Cheat Sheet](https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c/edit?gid=0)_ liste l’ensemble des paramètres sonores en regard de leurs commandes physiques, des CC et des NRPN qui les pilotent, et de leurs plages de valeurs, réelles et MIDI.
 
 - Le tableau _[Patch Comparison](https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c/edit?gid=1228388295)_ propose des fiches de patch vierges placées côte à côte, à compléter avec vos propres valeurs (après avoir copié ou téléchargé la feuille). Il est fait pour noter rapidement des réglages et les comparer.
+
+---
 
 ## Parts MIDI de réinitialisation et de contrôle pour Cubendo
 
@@ -152,6 +164,8 @@ Une fois que vous vous êtes forgé un modèle mental de l’instrument, cette f
 <img width="1992" height="1714" alt="AS-1 rà0 (Init)" src="https://github.com/user-attachments/assets/11763042-c816-4e5e-b683-65d82b0d471a" />
 
 _Le List Editor de Cubendo (le meilleur du genre — sérieusement les autres, prenez-en de la graine, copiez-le ou améliorez-le si vous pouvez…)_
+
+---
 
 ## Conversion des NRPN en CC simples
 
