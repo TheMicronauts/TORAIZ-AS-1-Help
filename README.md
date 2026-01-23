@@ -118,13 +118,35 @@ _A classic silver box_
 
 ## Pense-bête MIDI
 
-The TORAIZ AS-1’s MIDI implementation is great. It is no coincidence, as Dave Smith was among the small group of genius electronic luthiers who established the MIDI standard. All sound parameters can be set and automated directly from the DAW using [MIDI 1.0 messages](https://github.com/TheMicronauts/MIDI-1.0-Messages-Demystified). They are listed in this Google Sheets document along with their corresponding controls and value ranges:
+L’implémentation MIDI du TORAIZ AS-1 est très complète. Ce n’est pas un hasard, puisque Dave Smith faisait partie du petit groupe de luthiers électroniques de génie qui ont établi la norme MIDI. Tous les paramètres sonores peuvent être réglés et automatisés directement depuis un séquenceur via des [messages MIDI 1.0](https://github.com/TheMicronauts/MIDI-1.0-Messages-Demystified). Ceux-ci sont répertoriés dans ce document Google Sheets, accompagnés de leurs commandes correspondantes et des plages de valeurs :
 
 https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOYYyM
 
-- The first table lists all sound parameters alongside their physical controls, the CC and NRPN numbers that control them, and their range of both real-world and MIDI values.
+- Le premier tableau liste l’ensemble des paramètres sonores en regard de leurs commandes physiques, des numéros de CC et de NRPN qui les pilotent, ainsi que de leurs plages de valeurs, réelles et MIDI.
 
-- The second table, accessible via a tab at the bottom left, provides side-by-side blank patch sheets to be filled in with your own values (after copying or downloading the spreadsheet). It is designed for quickly noting down settings and comparing patches.
+- Le second tableau, accessible via un onglet en bas à gauche, propose des fiches de patch vierges placées côte à côte, à compléter avec vos propres valeurs (après avoir copié ou téléchargé la feuille de calcul). Il est fait pour noter rapidement des réglages et les comparer.
+
+## Reset And Control MIDI Parts For Cubendo
+
+While playback is stopped, the most direct way to remotely adjust the state and timbre of a MIDI instrument from Cubase and Nuendo is to enable _Acoustic Feedback_ in the _List Editor_, then enter CCs manually and scroll through their values (assuming, of course, that no _Preferences_ interfere with this functionality).
+
+Therefore, I have created a dedicated MIDI pattern (_Part_ in Cubendo-speak) containing every CC used by the AS-1, along with descriptive text (in the form of _Score_ or _Text Events_—named differently depending on where you are within the software, sigh). 
+
+Placed anywhere on a MIDI track, this _Part_ allows for quick adjustments and then, on playback, ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state (where it can also act as a panic button). Not only does it spare you from menu-diving, but it greatly reduces the need for managing presets, internal memory, Program Changes, or SysEx dumps.
+
+This XML file allows you to import it into your Cubase or Nuendo _Project_, along with two other _Parts_ (via _File > Import > Track Archive…_):
+
+- The first _Part_ is the one described above and contains the patch settings (_Program_ in DSI-speak). It’s also shown below. To avoid accidentally losing important settings, the MIDI messages that directly control the patch are muted; they must, therefore, be unmuted in order to work. On the other hand, CCs that cut the sound, the arpeggiator, or reset performance parameters are left unmuted. This is desirable for the _Part_’s primary use case: being positioned at the start of the timeline. These should probably be muted, however, if the _Part_ is used mid-song.
+
+- The second _Part_ contains the unit’s _Global_ settings, with default values that I find sensible (those shown in the first table), but which you should tweak to your liking.
+
+- The third _Part_ contains the SysEx message that will trigger the unit to dump the patch currently residing in its working memory. It allows you to record the dump (also a SysEx message) into a MIDI _Part_ and keep it within the _Project_ it is related to.
+
+Once you have established a mental model of the instrument, this workflow is far less disruptive to the creative process. It reduces cognitive load by removing the need to learn and memorise new interactions. Generally, it is simpler, faster, and more flexible than going through additional layers of abstraction or dedicated editors—which are, alas, almost always buggy, incomplete, and idiosyncratic.
+
+<img width="1726" alt="AS-1 rà0" src="https://github.com/user-attachments/assets/c7efe647-aec5-462a-95ca-e7ffa7f0f65a" />     
+
+_Cubendo’s List Editor (best in class – other DAWs, seriously, take note, copy it, improve it if you can)_
 
 
 Tous les paramètres de ce synthé peuvent être automatisés via MIDI en utilisant des NRPN (moitié droite de ce tableau). Une bonne moitié peut aussi l’être en utilisant un simple CC (moitié gauche du tableau). 
