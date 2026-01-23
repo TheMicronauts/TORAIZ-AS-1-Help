@@ -34,7 +34,7 @@ https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOY
 
 While playback is stopped, the most direct way to remotely adjust the state and timbre of a MIDI instrument from Cubase and Nuendo is to enable _Acoustic Feedback_ in the _List Editor_, then enter CCs manually and scroll through their values (assuming, of course, that no _Preferences_ interfere with this functionality).
 
-Therefore, I have created a dedicated MIDI pattern (_Part_ in Cubendo-speak) containing every CC used by the AS-1, along with descriptive text (in the form of _Score_ or _Text Events_—named differently depending on where you are within the software, sigh). 
+Therefore, and as is my habit with all my MIDI instruments, I have created a dedicated MIDI pattern (_Part_ in Cubendo-speak) containing every CC used by the AS-1, along with descriptive text (in the form of _Score_ or _Text Events_—named differently depending on where you are within the software, sigh). 
 
 Placed anywhere on a MIDI track, this _Part_ allows for quick adjustments and then, on playback, ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state (where it can also act as a panic button). Not only does it spare you from menu-diving, but it greatly reduces the need for managing presets, internal memory, Program Changes, or SysEx dumps.
 
@@ -133,7 +133,7 @@ https://docs.google.com/spreadsheets/d/1XDerLaoKoy6zsbu0w4pXwNQaluc6XFW1W9XfXDOY
 
 À l’arrêt, le moyen le plus direct d’ajuster à distance depuis Cubase ou Nuendo l’état et le timbre d’un instrument MIDI consiste à activer _Acoustic Feedback_ dans le _List Editor_, puis à saisir manuellement les CC et à faire défiler leurs valeurs à la souris (à condition, bien sûr, qu’aucun réglage en _Preferences_ n’interfère avec cette fonctionnalité).
 
-J’ai donc créé un pattern MIDI dédié (_Part_, en jargon Cubendo) contenant l’ensemble des CC utilisés par l’AS-1, avec une courte description sous forme de _Score_ ou _Text Events_ (nommés différemment à différents endroits du logiciel, fatigue).
+Selon mon habitude, j’ai donc créé un pattern MIDI dédié (_Part_, en jargon Cubendo) contenant l’ensemble des CC utilisés par l’AS-1, avec une courte description sous forme de _Score_ ou _Text Events_ (nommés différemment suivant l’endroit du logiciel, fatigue).
 
 Placée n’importe où sur une piste MIDI, cette _Part_ permet des ajustements rapides puis garantit qu’à la relecture, l’instrument retrouve ces réglages à ce moment précis – par exemple, au début d’un morceau pour restaurer son état initial (où elle peut également servir de bouton « Panic »). Non seulement ça évite de se farcir les menus du synthé, mais ça réduit considérablement le temps perdu à gérer les presets, la mémoire interne, les Program Changes et les dumps SysEx.
 
