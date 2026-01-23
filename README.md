@@ -1,6 +1,6 @@
 # Work in progress: Pioneer DJ-Dave Smith Instruments TORAIZ AS-1 MIDI Toolkit
 
-_(version française ci-dessous)_ *([Version française ci-dessous](#vf))*
+_([Version française ci-dessous](#vf))_
 
 ## Introduction
 
@@ -94,9 +94,10 @@ The conversion is straightforward and doesn’t cause any resolution loss.
      
      `y = (x * 0.78) + 100`
 
-Some resolution loss is unavoidable: it’s halved when the value range is 0–254 and divided by a factor of 1.3 for the _LOW–PASS FILTER Cutoff_. 
+Some resolution loss is unavoidable: it’s halved when the value range is 0–254 and divided by a factor of 1.3 for the _LOW–PASS FILTER Cutoff_.
+
 <a name="vf"></a>
-# Pioneer DJ-Dave Smith Instruments TORAIZ AS-1 MIDI Toolkit (version française)
+# Pioneer DJ-Dave Smith Instruments TORAIZ AS-1 MIDI Toolkit (Version française)
 
 ## Introduction
 
