@@ -193,6 +193,6 @@ La conversion est directe et n’entraîne aucune perte de résolution.
      
    -  Lorsque la plage de valeurs est 0–164 (_LOW-PASS FILTER Cutoff_) et que la valeur cible est > 127 (les Parts venant des CC#6 = 1)
      
-     `y = (x * 0.78) + 100`
+        `y = (x * 0.78) + 100`
 
 Une perte de résolution est inévitable : elle sera divisée par deux lorsque la plage de valeurs est 0–254 et par 1,3 pour _LOW–PASS FILTER Cutoff_.
