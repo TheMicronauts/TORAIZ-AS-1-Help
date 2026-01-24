@@ -1,6 +1,6 @@
 # Pioneer DJ-Dave Smith Instruments TORAIZ AS-1 MIDI Toolkit
 
-_([Version française ci-dessous](#vf))_
+_[Version française ci-dessous](https://github.com/TheMicronauts/TORAIZ-AS-1-MIDI-Toolkit/blob/main/README.md#pioneer-dj-dave-smith-instruments-toraiz-as-1-midi-toolkit-version-fran%C3%A7aise)_
 
 ## Introduction
 
