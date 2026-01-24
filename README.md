@@ -108,7 +108,6 @@ Some resolution loss is unavoidable: it’s halved when the value range is 0–2
 
 ---
 
-<a name="vf"></a>
 # Pioneer DJ-Dave Smith Instruments TORAIZ AS-1 MIDI Toolkit (Version française)
 
 ## Introduction
