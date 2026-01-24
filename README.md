@@ -24,7 +24,7 @@ _A classic silver box_
 
 ## MIDI Cheat & Patch Sheet
 
-The TORAIZ AS-1’s MIDI implementation is pretty comprehensive (it is no coincidence, as Dave Smith was among the small group of genius electronic luthiers who established the MIDI standard). All sound parameters can be set and automated directly from the DAW using the [MIDI 1.0 messages](https://github.com/TheMicronauts/MIDI-1.0-Messages-Demystified) listed in this Google Sheets document:
+The TORAIZ AS-1’s MIDI implementation is pretty comprehensive (hardly a coincidence: [Dave Smith](https://en.wikipedia.org/wiki/Dave_Smith_(engineer)#MIDI) is one of the primary inventors of the MIDI standard). All sound parameters can be set and automated directly from the DAW using the [MIDI 1.0 messages](https://github.com/TheMicronauts/MIDI-1.0-Messages-Demystified) listed in this Google Sheets document:
 
 https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c
 
@@ -132,7 +132,7 @@ _Une célèbre boîte argentée_
 
 ## Pense-bête MIDI
 
-L’implémentation MIDI du TORAIZ AS-1 est assez complète (ce n’est pas pour rien si Dave Smith faisait partie du petit groupe de luthiers électroniques de génie qui ont établi la norme MIDI). Tous les paramètres sonores peuvent être réglés et automatisés directement depuis un séquenceur via les [messages MIDI 1.0](https://github.com/TheMicronauts/MIDI-1.0-Messages-Demystified) répertoriés dans ce document Google Sheets :
+L’implémentation MIDI du TORAIZ AS-1 est assez complète (pas un hasard : [Dave Smith](https://en.wikipedia.org/wiki/Dave_Smith_(engineer)#MIDI) est un des principaux inventeurs de la norme MIDI). Tous les paramètres sonores peuvent être réglés et automatisés directement depuis un séquenceur via les [messages MIDI 1.0](https://github.com/TheMicronauts/MIDI-1.0-Messages-Demystified) répertoriés dans ce document Google Sheets :
 
 https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c
 
