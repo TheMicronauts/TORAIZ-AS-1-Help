@@ -42,7 +42,7 @@ Therefore, as is my habit, I have created a dedicated MIDI pattern (_Part_ in Cu
 
 Placed anywhere on a MIDI track, this _Part_ allows for quick adjustments and then, on playback, ensures the instrument recalls the settings at that specific moment in time—for instance, at the start of a song to restore its initial state (where it can also act as a panic button). Not only does it spare you from menu-diving, but it greatly reduces the need for managing presets, internal memory, Program Changes, or SysEx dumps.
 
-The AS-1.xml file in this repository, which you can download from this link, allows you to import it into your Cubase or Nuendo _Project_, along with two other _Parts_ (via _File > Import > Track Archive…_):
+The `AS-1.xml` file in this repository, which you can download from this link, allows you to import it into your Cubase or Nuendo _Project_, along with two other _Parts_ (via _File > Import > Track Archive…_):
 
 https://github.com/TheMicronauts/TORAIZ-AS-1-MIDI-Toolkit/releases/download/v1.0.0/AS-1.xml
 
@@ -150,7 +150,7 @@ J’ai donc créé selon mon habitude un pattern MIDI dédié (_Part_, en jargon
 
 Placée n’importe où sur une piste MIDI, cette _Part_ permet des ajustements rapides puis garantit qu’à la relecture, l’instrument retrouve ces réglages à ce moment précis – par exemple, au début d’un morceau pour restaurer son état initial (où elle peut également servir de bouton « Panic »). Non seulement ça évite de se farcir les menus du synthé, mais ça réduit considérablement le temps perdu à gérer les presets, la mémoire interne, les Program Changes et les dumps SysEx.
 
-Le fichier AS-1.xml proposé dans ce dépôt, téléchargeable depuis ce lien, vous permet de l’importer dans votre projet Cubase ou Nuendo, accompagnée de deux autres _Parts_ (via _File > Import > Track Archive…_) :
+Le fichier `AS-1.xml` proposé dans ce dépôt, téléchargeable depuis ce lien, vous permet de l’importer dans votre projet Cubase ou Nuendo, accompagnée de deux autres _Parts_ (via _File > Import > Track Archive…_) :
 
 https://github.com/TheMicronauts/TORAIZ-AS-1-MIDI-Toolkit/releases/download/v1.0.0/AS-1.xml
 
