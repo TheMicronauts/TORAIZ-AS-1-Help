@@ -28,9 +28,9 @@ The TORAIZ AS-1’s MIDI implementation is pretty comprehensive (hardly a coinci
 
 https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c
 
-- The table named _[MIDI Cheat Sheet](https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c/edit?gid=0)_ lists all sound parameters alongside their physical controls, the CC and NRPN numbers that control them, and their range of both real-world and MIDI values.
+- The first table, named _[MIDI Cheat Sheet](https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c/edit?gid=0)_, lists all sound parameters alongside their physical controls, the CC and NRPN numbers that control them, and their range of both real-world and MIDI values.
 
-- The table named _[Patch Comparison](https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c/edit?gid=1228388295)_ provides side-by-side blank patch sheets to be filled in with your own values (after copying or downloading the spreadsheet). It is designed for quickly noting down settings and comparing patches.
+- The second table, named _[Patch Comparison](https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c/edit?gid=1228388295)_, provides side-by-side blank patch sheets to be filled in with your own values (after copying or downloading the spreadsheet). It is designed for quickly noting down settings and comparing patches.
 
 ---
 
@@ -136,9 +136,9 @@ L’implémentation MIDI du TORAIZ AS-1 est assez complète (pas un hasard, [Dav
 
 https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c
 
-- Le tableau _[MIDI Cheat Sheet](https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c/edit?gid=0)_ liste l’ensemble des paramètres sonores en regard de leurs commandes physiques, des CC et des NRPN qui les pilotent, et de leurs plages de valeurs, réelles et MIDI.
+- Le premier tableau, nommé _[MIDI Cheat Sheet](https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c/edit?gid=0)_, liste l’ensemble des paramètres sonores en regard de leurs commandes physiques, des CC et des NRPN qui les pilotent, et de leurs plages de valeurs, réelles et MIDI.
 
-- Le tableau _[Patch Comparison](https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c/edit?gid=1228388295)_ propose des fiches de patch vierges placées côte à côte, à compléter avec vos propres valeurs (après avoir copié ou téléchargé la feuille). Il est fait pour noter rapidement des réglages et les comparer.
+- Le second tableau, nommé _[Patch Comparison](https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c/edit?gid=1228388295)_, propose des fiches de patch vierges placées côte à côte, à compléter avec vos propres valeurs (après avoir copié ou téléchargé la feuille). Il est fait pour noter rapidement des réglages et les comparer.
 
 ---
 
