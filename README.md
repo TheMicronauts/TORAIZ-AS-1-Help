@@ -68,7 +68,7 @@ As we’ve just seen, all parameters of this synth can be automated via MIDI usi
 
 Now, a single CC is quicker to visualise and edit than its NRPN equivalent (which uses a group of four consecutive CCs). Moreover, CC#s constituting a specific NRPN can conflict on the MIDI stream with the same CC#s used by other NRPNs, preventing the synth from recalling the intended sound.
 
-Fortunately, when the parameter can be controlled by both methods, it is possible—if needed—to convert NRPNs into single CCs within the MIDI sequence, using Cubendo’s various functionalities, including the _Logical Editor_.
+Fortunately, when the parameter can be controlled by both methods, it is possible, if needed, to convert NRPNs into single CCs within the MIDI sequence, using Cubendo’s various functionalities, including the _Logical Editor_.
 
 ### If the parameter’s value range (column L of the first table) is ≤ 127:
 
