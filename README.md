@@ -112,9 +112,9 @@ Some resolution loss is unavoidable: it’s halved when the value range is 0–2
 
 ## Introduction
 
-Le TORAIZ AS-1 est un monosynthé analogique à commande numérique intégrale, conçu par Dave Smith Instruments (désormais [Sequential](https://sequential.com/)) pour [Pioneer DJ](https://www.pioneerdj.com/). Oui, le nom craint et ressemble à celui d’un SUV électrique, mais bon, Pioneer DJ n’a jamais été le temple de la classe. 
+Le TORAIZ AS-1 est un monosynthé analogique à commande numérique intégrale, conçu par Dave Smith Instruments (désormais [Sequential](https://sequential.com/)) pour [Pioneer DJ](https://www.pioneerdj.com/) (oui, le nom craint, on dirait celui d’un SUV électrique, mais bon, Pioneer DJ n’a jamais été le temple de l’élégance). 
 
-Le moteur de synthèse et le trajet du signal sont entièrement analogiques, à l’exception d’un multi-effet numérique optionnel. En substance, il offre une unique voix issue du Prophet-6, intégrée dans un boîtier dont le format rappelle celui d’une célèbre « boîte argentée » (côté son, il n’a clairement pas autant de caractère que cette dernière, mais il est bien plus polyvalent).
+Le moteur de synthèse et le trajet du signal sont entièrement analogiques, à l’exception d’un multi-effet numérique optionnel. En substance, il offre une unique voix issue du Prophet-6, intégrée dans un boîtier dont le format rappelle celui d’une fameuse « boîte argentée » (côté son, il n’a clairement pas autant de caractère que cette dernière, mais il est bien plus polyvalent).
 
 Apparemment conçu pour le live, il n’a pas rencontré un franc succès en raison de problèmes de synchronisation. En studio, où il peut être joué et automatisé comme un module sonore via MIDI, il est excellent.
 
@@ -126,7 +126,7 @@ Il semblerait qu’il partage la même implémentation MIDI que le [Prophet-6](h
 _TORAIZ AS-1_
 
 ![2022-11-07 15 16 13](https://github.com/user-attachments/assets/7d2e4497-e7b0-4cc4-be8c-169a956db544)
-_Une célèbre boîte argentée_
+_La fameuse boîte argentée_
 
 ---
 
