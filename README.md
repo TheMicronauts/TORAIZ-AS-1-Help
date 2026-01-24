@@ -147,7 +147,7 @@ https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE
 
 À l’arrêt, le moyen le plus direct d’ajuster à distance depuis Cubase ou Nuendo l’état et le timbre d’un instrument MIDI consiste à activer _Acoustic Feedback_ dans le _List Editor_, puis à saisir manuellement les CC et à faire défiler leurs valeurs à la souris (à condition, bien sûr, qu’aucun réglage en _Preferences_ n’interfère avec cette fonctionnalité).
 
-Selon mon habitude, j’ai donc créé un pattern MIDI dédié (_Part_, en jargon Cubendo) contenant l’ensemble des CC utilisés par l’AS-1, avec une courte description sous forme de _Score_ ou _Text Events_ (nommés différemment suivant l’endroit du logiciel, fatigue).
+J’ai donc créé selon mon habitude un pattern MIDI dédié (_Part_, en jargon Cubendo) contenant l’ensemble des CC utilisés par l’AS-1, avec une courte description sous forme de _Score_ ou _Text Events_ (nommés différemment suivant l’endroit du logiciel, fatigue).
 
 Placée n’importe où sur une piste MIDI, cette _Part_ permet des ajustements rapides puis garantit qu’à la relecture, l’instrument retrouve ces réglages à ce moment précis – par exemple, au début d’un morceau pour restaurer son état initial (où elle peut également servir de bouton « Panic »). Non seulement ça évite de se farcir les menus du synthé, mais ça réduit considérablement le temps perdu à gérer les presets, la mémoire interne, les Program Changes et les dumps SysEx.
 
