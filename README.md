@@ -132,7 +132,7 @@ _La fameuse boîte argentée_
 
 ## Pense-bête MIDI
 
-L’implémentation MIDI du TORAIZ AS-1 est assez complète (pas un hasard puisque [Dave Smith](https://en.wikipedia.org/wiki/Dave_Smith_(engineer)#MIDI) est un des principaux inventeurs de la norme MIDI). Tous les paramètres sonores peuvent être réglés et automatisés directement depuis un séquenceur via les [messages MIDI 1.0](https://github.com/TheMicronauts/MIDI-1.0-Messages-Demystified) répertoriés dans ce document Google Sheets :
+L’implémentation MIDI du TORAIZ AS-1 est assez complète (pas un hasard, [Dave Smith](https://en.wikipedia.org/wiki/Dave_Smith_(engineer)#MIDI) étant l’un des principaux inventeurs de la norme MIDI). Tous les paramètres sonores peuvent être réglés et automatisés directement depuis un séquenceur via les [messages MIDI 1.0](https://github.com/TheMicronauts/MIDI-1.0-Messages-Demystified) répertoriés dans ce document Google Sheets :
 
 https://docs.google.com/spreadsheets/d/1MrIO74On0-aR-7XL16uxlW1wex_UlNCRtuK5fLfE12c
 
