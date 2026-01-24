@@ -12,7 +12,7 @@ It was apparently designed for live use, but didn’t really catch on because of
 
 It was reviewed by [*Sound On Sound*](https://www.soundonsound.com/reviews/pioneer-dj-toraiz-1) in November 2017.
 
-It seems that the [Prophet-6](https://sequential.com/product/prophet-6/) shares the same MIDI implementation, although I can’t confirm. If that’s the case, these resources could be useful for that synth as well.
+It seems that the [Prophet-6](https://sequential.com/product/prophet-6/) shares the same MIDI implementation, although I can’t confirm. If that’s the case, these resources should be useful for that synth as well.
 
 ![2017-10-25 17 13 47](https://github.com/user-attachments/assets/67185c02-7175-4bcf-a8d5-be0f94a32024)
 _TORAIZ AS-1_
