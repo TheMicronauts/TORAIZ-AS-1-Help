@@ -104,9 +104,10 @@ The conversion is straightforward and doesn’t cause any resolution loss.
      
      `y = (x * 0.78) + 100`
 
-Some resolution loss is unavoidable: it’s halved when the value range is 0–254 and divided by a factor of 1.3 for the _LOW–PASS FILTER Cutoff_.
+Note: 
+- Some resolution loss is unavoidable: it’s halved when the value range is 0–254 and divided by a factor of 1.3 for the _LOW–PASS FILTER Cutoff_.
 
-Note: The formulas use the values that produce the fewest errors, even if they don’t make any sense. For example, `0.78` produces a more accurate conversion than `0.7758` (the result of `128 / 165`). Either the mapping between real-world and MIDI values is non-linear, or Cubase’s Logical Editor is bugged. I do not have the luxury of checking.
+- The formulas use the values that produce the fewest errors, even if they don’t make any sense. For example, `0.78` produces a more accurate conversion than `0.7758` (the result of `128 / 165`). Either the mapping between real-world and MIDI values is non-linear, or Cubase’s Logical Editor is bugged. I do not have the luxury of checking.
 
 ---
 
