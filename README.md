@@ -70,7 +70,7 @@ Now, a single CC is quicker to visualise and edit than its NRPN equivalent (whic
 
 Fortunately, when the parameter can be controlled by both methods, it is possible, if needed, to convert NRPNs into single CCs within the MIDI sequence, using Cubendo’s various functionalities, including the _Logical Editor_.
 
-### If the parameter’s value range (column L of the first table) is ≤ 127:
+### If the parameter’s value range is ≤ 0–127 (column L of the first table):
 
 1. delete CC#99, 98, and 6
 
@@ -78,7 +78,7 @@ Fortunately, when the parameter can be controlled by both methods, it is possibl
 
 The conversion is straightforward and doesn’t cause any resolution loss.
 
-### If the parameter’s value range (column L of the first table) is > 127:
+### If the parameter’s value range is > 0–127 (column L of the first table):
 
 1. split into two distinct lanes or patterns the values ≤ 127 (accessed via NRPN with CC#6 = 0), and the values > 127 (accessed via NRPN with CC#6 = 1)
 
@@ -180,7 +180,7 @@ Bien sûr, un CC unique est plus facile à visualiser et à éditer que son équ
 
 Heureusement, lorsqu’un paramètre peut être contrôlé par les deux méthodes, il est possible si besoin de convertir les NRPN en CC simples au sein d’une séquence MIDI, en s’appuyant sur les diverses fonctionnalités de Cubendo, notamment le _Logical Editor_.
 
-### Si la plage de valeurs du paramètre (colonne L du premier tableau) est ≤ 127 :
+### Si la plage de valeurs du paramètre est ≤ 0–127 (colonne L du premier tableau) :
 
 1. supprimer les CC#99, 98 et 6
 
@@ -188,7 +188,7 @@ Heureusement, lorsqu’un paramètre peut être contrôlé par les deux méthode
 
 La conversion est directe et n’entraîne aucune perte de résolution.
 
-### Si la plage de valeurs du paramètre (colonne L du premier tableau) est > 127 :
+### Si la plage de valeurs du paramètre est > 0–127 (colonne L du premier tableau) :
 
 1. séparer en Parts distinctes les valeurs ≤ 127 (accédées par les NRPN où CC#6 = 0) et les valeurs > 127 (accédées par les NRPN où CC#6 = 1).
 
