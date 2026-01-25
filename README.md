@@ -64,7 +64,7 @@ _Cubendo’s List Editor (best in class – other DAWs, seriously, take note, co
 
 ## Converting NRPNs Into Single CCs
 
-As we’ve just seen, all parameters of this synth can be automated via MIDI using NRPNs (right half of the first table), and a good number of them can also be automated using single CCs (left half of the first table).
+As we’ve just seen, all parameters of the AS-1 can be automated via MIDI using NRPNs (right half of the first table), and a good number of them can also be automated using single CCs (left half of the first table).
 
 Now, a single CC is quicker to visualise and edit than its NRPN equivalent (which uses a group of four consecutive CCs). Moreover, CC#s constituting a specific NRPN can conflict on the MIDI stream with the same CC#s used by other NRPNs, preventing the synth from recalling the intended sound.
 
@@ -172,7 +172,7 @@ _Le List Editor de Cubendo (le meilleur du genre — sérieusement les autres, p
 
 ## Conversion des NRPN en CC simples
 
-Comme nous venons de le voir, tous les paramètres de ce synthé peuvent être automatisés via MIDI à l’aide de NRPN (moitié droite du premier tableau). Un bon nombre d’entre eux peuvent également l’être à l’aide de CC simples (moitié gauche du premier tableau).
+Comme nous venons de le voir, tous les paramètres du AS-1 peuvent être automatisés via MIDI à l’aide de NRPN (moitié droite du premier tableau). Un bon nombre d’entre eux peuvent également l’être à l’aide de CC simples (moitié gauche du premier tableau).
 
 Bien sûr, un CC unique est plus facile à visualiser et à éditer que son équivalent NRPN (un groupe de quatre CC envoyés simultanément). De plus, les CC constituant un NRPN donné peuvent entrer en conflit dans le flux MIDI avec les mêmes CC utilisés par d’autres NRPN, empêchant ainsi le synthé de restituer le son escompté.
 
