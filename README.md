@@ -106,7 +106,7 @@ The conversion is straightforward and doesn’t cause any resolution loss.
 
 Some resolution loss is unavoidable: it’s halved when the value range is 0–254 and divided by a factor of 1.3 for the _LOW–PASS FILTER Cutoff_.
 
-Note: The formulas use the values that produce the fewest errors, even if they don’t make any sense. For example, 0.78 produces a more accurate conversion than 0.7756 ≈ 128 / 165. Either the mapping between real-world and MIDI values is non-linear, or Cubase’s Logical Editor is bugged. I don’t have time to look into it right now.
+Note: The formulas use the values that produce the fewest errors, even if they don’t make any sense. For example, 0.78 produces a more accurate conversion than 0.7756 ≈ 128 / 165. Either the mapping between real-world and MIDI values is non-linear, or Cubase’s Logical Editor is bugged. I don’t have time to look into it.
 
 ---
 
@@ -216,4 +216,4 @@ La conversion est directe et n’entraîne aucune perte de résolution.
 
 Une perte de résolution est inévitable : elle sera divisée par deux lorsque la plage de valeurs est 0–254 et par 1,3 pour _LOW–PASS FILTER Cutoff_.
 
-Note : les formules utilisent les valeurs qui produisent le moins d’erreurs, même si leur logique m’échappe. Par exemple, 0,78 produit une conversion plus fidèle que 0,7756 ≈ 128 / 165. Soit le mapping de DSI entre valeurs réelles et valeurs MIDI n'est pas linéaire, soit le _Logical Editor_ de Cubase est buggé. Je n'ai pas le temps de vérifié dans l'immédiat. 
+Note : les formules utilisent les valeurs qui produisent le moins d’erreur, même si leur logique m’échappe. Par exemple, 0,78 produit une conversion plus fidèle que 0,7756 ≈ 128 / 165. Soit le mapping de DSI entre valeurs réelles et valeurs MIDI n’est pas linéaire, soit le _Logical Editor_ de Cubase est buggé. Je n’ai pas le temps de vérifier. 
