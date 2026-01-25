@@ -6,7 +6,7 @@ _[Version française](https://github.com/TheMicronauts/TORAIZ-AS-1-MIDI-Toolkit/
 
 The TORAIZ AS-1 is an analog monosynth with full digital control, designed by Dave Smith Instruments (now [Sequential](https://sequential.com/)) for [Pioneer DJ](https://www.pioneerdj.com/). 
 
-The synthesis engine and signal path are entirely analog, except for an optional digital multi-FX. In essence, it offers a single voice from the Prophet-6, housed in an enclosure with a form factor reminiscent of a classic silver box (sound-wise, it really doesn’t have as much character as the latter, but it is much more versatile).
+The synthesis engine and signal path are entirely analog, except for an optional digital multi-FX. In essence, it offers a single voice from the Prophet-6, housed in an enclosure with a form factor reminiscent of a classic silver box (sound-wise, it obviously doesn’t have as much character as the latter, but it is far more versatile).
 
 It was apparently designed for live use, but didn’t really catch on because of sync issues (nice one, champs…). In the studio, where it can be played and automated as a sound module via MIDI, it’s great.
 
@@ -114,9 +114,9 @@ The formulas use the values that produce the fewest rounding errors, even if the
 
 ## Introduction
 
-Le TORAIZ AS-1 est un monosynthé analogique à commande numérique intégrale, conçu par Dave Smith Instruments (désormais [Sequential](https://sequential.com/)) pour [Pioneer DJ](https://www.pioneerdj.com/) (oui, le nom craint, on dirait celui d’un SUV électrique, mais bon, Pioneer DJ n’a jamais été le temple de l’élégance). 
+Le TORAIZ AS-1 est un monosynthé analogique à commande numérique intégrale, conçu par Dave Smith Instruments (désormais [Sequential](https://sequential.com/)) pour [Pioneer DJ](https://www.pioneerdj.com/) (oui, on dirait le nom d’un SUV électrique). 
 
-Le moteur de synthèse et le trajet du signal sont entièrement analogiques, à l’exception d’un multi-effet numérique optionnel. En substance, il offre une unique voix issue du Prophet-6, intégrée dans un boîtier dont le format rappelle celui d’une fameuse « boîte argentée » (côté son, il n’a clairement pas autant de caractère que cette dernière, mais il est bien plus polyvalent).
+Le moteur de synthèse et le trajet du signal sont entièrement analogiques, à l’exception d’un multi-effet numérique optionnel. En substance, il offre une unique voix issue du Prophet-6, intégrée dans un boîtier dont le format rappelle celui d’une fameuse « boîte argentée » (côté son, il n’a bien sûr pas autant de caractère que cette dernière, mais il est beaucoup plus polyvalent).
 
 Apparemment conçu pour le live, il n’a pas rencontré un franc succès en raison de problèmes de synchronisation (bravo les champions…). En studio, où il peut être joué et automatisé comme un module sonore via MIDI, il est excellent.
 
