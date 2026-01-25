@@ -216,4 +216,4 @@ La conversion est directe et n’entraîne aucune perte de résolution.
 
 Une perte de résolution est inévitable : elle sera divisée par deux lorsque la plage de valeurs est 0–254 et par 1,3 pour _LOW–PASS FILTER Cutoff_.
 
-Les formules utilisent les valeurs qui produisent le moins d’erreur, même si leur logique m’échappe. Par exemple, `0,78` produit une conversion plus fidèle que `0,7756` (le résultat de `128 / 165`). Soit le mapping de DSI entre valeurs réelles et valeurs MIDI n’est pas linéaire, soit le _Logical Editor_ de Cubase est buggé. Je n’ai pas le loisir de vérifier. 
+Les formules utilisent les valeurs qui produisent le moins d’erreur, même si leur logique m’échappe. Par exemple, `0,78` produit une conversion plus fidèle que `0,7758` (le résultat de `128 / 165`). Soit le mapping de DSI entre valeurs réelles et valeurs MIDI n’est pas linéaire, soit le _Logical Editor_ de Cubase est buggé. Je n’ai pas le loisir de vérifier. 
